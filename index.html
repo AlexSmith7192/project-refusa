@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REFUSA</title>
+	<meta charset="utf-8">
+	<!-- Adptando site para mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Padronizando os espaçamentos com o reset.css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estyles.css">
+	
+	<!-- adicionando o leaflet -->
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+	 <!-- Leaflet CSS -->
+	 <link rel="stylesheet" href="css/leaflet_fullscreen.css">
+	 <link rel="stylesheet" href="css/leaflet_measure.css">
+	 <link rel="stylesheet" href="css/leaflet_control_boxzoom.css">
+	 <link rel="stylesheet" href="css/Leaflet_NavBar.css">
+	 <link rel="stylesheet" href="css/LControl_MousePosition.css">
+	
+	 <!-- Leaflet JS -->
+	 <script src="js/leaflet_fullscreen.js"></script>
+	 <script src="js/leaflet_measure.js"></script>
+	 <script src="js/leaflet_control_boxzoom.js"></script>
+	 <script src="js/Leaflet_NavBar.js"></script>
+	 <script src="js/LControl_MousePosition.js"></script>
+	 
+
+	<!-- adicionando mapbox -->
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+
+<body>
+	<header class="container">
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Conteúdo do cabeçalho -->
+		<h1><img src="imagens/logo-refusa.jpg" alt="REFUSA"></h1>
+
+		<h1 class="titulo">Regularização fundiária do Semiárido</h1>
+
+		<nav class="menu-opcoes">
+			<ul>
+				<li><a href="#">Mapa</a></li>
+				<li><a href="#">Municípios</a></li>
+				<li><a href="#">Equipe</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--Fim do cabeçalho-->
+
+
+	<div id="map" class="container">
+		<script src="js/leaflet.js"></script>
+	</div>
+
+	<footer>
+		<!-- Conteúdo do rodápe -->
+		<div class="container">
+			<img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI">
+		</div>
+	</footer>
+
+</body>
+</html>
