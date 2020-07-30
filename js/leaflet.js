@@ -1,36 +1,52 @@
-// mapa
+//configurações do mapa
 var map = L.map('map', {
     center: [-5.1, -42.8], // centro do mapa
     zoom: 10, // zoom inicial
     fullscreenControl: {} //tela cheia
  });
 
+
 // adicionando mapas bases
-var baseMaps = {
-    "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-        maxZoom: 19,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map),
-    "Esri World Imagery": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-    }),
-    "Esri World Topo Map": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-    }),
-};//finish basemaps
+var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
-// marcadores
-var ifpi = L.marker([-5.0887267199904604, -42.81088024377823]).bindPopup('<b>Instituto Federal do Piauí</b>');
+var ewi = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
 
-// grupo de marcadores
-var ifpis = new L.LayerGroup();
-    L.marker([-5.102090110297968, -42.81304478645325]).bindPopup('<b>Instituto Federal do Piauí</b>').addTo(ifpis),
-    L.marker([-5.098568956057855, -42.74048030376434]).bindPopup('<b>Instituto Federal do Piauí</b>').addTo(ifpis);
+var ewtm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+});
 
-var markers = {
-    "IFPI": ifpi,
-    "IFPIs": ifpis
-};
+//adicionando arquivos geojson
+var limite_semiarido = L.geoJSON(limite_semiarido, {
+    color: 'green',
+    opacity: 0.5,
+})
+
+//grupo de camadas bases
+var baseMaps = [
+    {
+        groupName : "Camadas",
+        layers : {
+            "OpenStreetMap" : osm,
+            "Esri World Imagery" : ewi,
+            "Esri World Topo Map" : ewtm
+        }
+    }
+];
+
+//grupo de camadas com as divisões politicas
+var overlayers = [
+    {
+        groupName: "Limites Políticos",
+        layers: {
+            "Limite do Semiárido": limite_semiarido,
+        }
+    }
+]
 
 // Coordenadas da posição do mouse no mapa
 L.control.mousePosition({
@@ -56,8 +72,18 @@ var measureControl = L.control.measure({
   localization: 'pt-br',
   }).addTo(map);
   
-//controle das camadas
-L.control.layers(baseMaps, markers).addTo(map);
+//estilo do controlador de camadas
+var optionsControl = {
+    container_width : "300px",
+    container_maxHeight : "500px",
+    group_maxHeight : "200px",
+    exclusive : false,
+    collapsed : true
+};
+
+//controlador de camadas
+var control = L.Control.styledLayerControl(baseMaps, overlayers, optionsControl);
+map.addControl(control);
 
 //controle de escala
 L.control.scale().addTo(map);
