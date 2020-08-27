@@ -31,12 +31,10 @@ var municipios_piaui = L.geoJSON(municipios_piaui, {
     opacity: 1,
 })
 
-municipios_piaui.bringToBack()
-
 var altolonga_bomlugar = L.geoJSON(altolonga_bomlugar, {
     color: 'red',
     opacity: 1,
-}).addTo(map).bindPopup("Testando popup")
+}).addTo(map).bindPopup("Área: <br> Perímetro: <br> Quantidade de moradores: <br> Território de Desenvolvimento: Entre Rios")
 
 var altolonga_marinopolis = L.geoJSON(altolonga_marinopolis, {
     color: 'red',
