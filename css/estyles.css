@@ -17,7 +17,7 @@ header {
 	text-align: right;
 	padding-right: 3%;
 	position: absolute;
-	top: 2%;
+	top: 5%;
 	right: 0;
 }
 
@@ -67,3 +67,4 @@ footer {
 footer .container {
 	position: relative;
 }
+
