@@ -12,6 +12,12 @@ header {
     position: relative;
 }
 
+/*Logo Projeto Refusa*/
+.logo-topo {
+	width: 225px;
+	height: 100px;
+}
+
 .titulo {
 	font-size: 50px;
 	text-align: right;
@@ -90,14 +96,13 @@ header {
 
 #map {
 	width: 100%;
-    height: 600px;
+    height: 100vh;
     box-shadow: 5px 5px 5px #888;
 }
 
-/*padronizando o tamanho das imagens*/
-img {
-	width: 225px;
-	height: 100px;
+.logo-ifpi-rodape {
+	width: 200px;
+	height: 150px;
 }
 
 footer {
