@@ -1,6 +1,6 @@
 //configurações do mapa
 var map = L.map('map', {
-    center: [-5.107358, -42.116089], // centro do mapa
+    center: [-5.500000, -42.000000], // centro do mapa
     zoom: 8, // zoom inicial
     fullscreenControl: {} //tela cheia
  });
@@ -110,6 +110,11 @@ var jardimdomulato_lagoadoscocos = L.geoJSON(jardimdomulato_lagoadoscocos, {
     color: 'red',
     opacity: 1,
 }).addTo(map).bindPopup("Assentamento Lagoa dos Cocos<br>Área: 130,9703 Ha<br>Perímetro: 9180,6615 m<br>Quantidade de famílias: 18<br>Município: Jardim do Mulato<br>Território de Desenvolvimento: Entre Rios")
+
+var jatoba_santa_luz = L.geoJSON(jatoba_santa_luz, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Santa Luz<br>Área: 1270,2428 Ha<br>Perímetro: 17572,9401 m<br>Quantidade de famílias: <br>Município: Jatobá do Piauí<br>Território de Desenvolvimento: Carnaubais")
 
 var josedefreitas_lembrada = L.geoJSON(josedefreitas_lembrada, {
     color: 'red',
