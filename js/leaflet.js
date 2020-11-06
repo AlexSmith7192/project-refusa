@@ -66,6 +66,16 @@ var aroazes_barrovermelho = L.geoJSON(aroazes_barrovermelho, {
     opacity: 1,
 }).addTo(map).bindPopup("Assentamento Barro Vermelho<br>Área: 399,9886 Ha<br>Perímetro: 8787,2631 m<br>Quantidade de famílias: 15<br>Município: Aroazes<br>Território de Desenvolvimento: Vale do Sambito")
 
+var batalha_bacabas = L.geoJSON(batalha_bacabas, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Bacabas<br>Área: 411,2077 Ha<br>Perímetro: 8301,1565 m<br>Quantidade de famílias: <br>Município: Batalha<br>Território de Desenvolvimento: Cocais")
+
+var batalha_caicarinha = L.geoJSON(batalha_caicarinha, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Caiçarinha<br>Área: 272,7109 Ha<br>Perímetro: 7021,6467 m<br>Quantidade de famílias: <br>Município: Batalha<br>Território de Desenvolvimento: Cocais")
+
 var batalha_maganos = L.geoJSON(batalha_maganos, {
     color: 'red',
     opacity: 1,
@@ -116,10 +126,25 @@ var jatoba_santa_luz = L.geoJSON(jatoba_santa_luz, {
     opacity: 1,
 }).addTo(map).bindPopup("Assentamento Santa Luz<br>Área: 1270,2428 Ha<br>Perímetro: 17572,9401 m<br>Quantidade de famílias: <br>Município: Jatobá do Piauí<br>Território de Desenvolvimento: Carnaubais")
 
+var joaquimpires_aninga = L.geoJSON(joaquimpires_aninga, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Aninga<br>Área: 483,7254 Ha<br>Perímetro: 11548,2945 m<br>Quantidade de famílias: <br>Município: Joaquim Pires<br>Território de Desenvolvimento: Cocais")
+
+var josedefreitas_altoalegre = L.geoJSON(josedefreitas_altoalegre, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Alto Alegre<br>Área: 310,1311 Ha<br>Perímetro: 7491,4437 m<br>Quantidade de famílias: <br>Município: José de Freitas<br>Território de Desenvolvimento: Entre Rios")
+
 var josedefreitas_lembrada = L.geoJSON(josedefreitas_lembrada, {
     color: 'red',
     opacity: 1,
 }).addTo(map).bindPopup("Assentamento Lembrada<br>Área: 1013,6538 Ha<br>Perímetro: 13029,9086 m<br>Quantidade de famílias: 30<br>Município: José de Freitas<br>Território de Desenvolvimento: Entre Rios")
+
+var josedefreitas_solnascente = L.geoJSON(josedefreitas_solnascente, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Sol Nascente<br>Área: 127,245 Ha<br>Perímetro: 7425,8625 m<br>Quantidade de famílias: <br>Município: José de Freitas<br>Território de Desenvolvimento: Entre Rios")
 
 var lagoadopiaui_espiritosanto = L.geoJSON(lagoadopiaui_espiritosanto, {
     color: 'red',
@@ -160,6 +185,16 @@ var santacruzdopiaui_vilanova = L.geoJSON(santacruzdopiaui_vilanova, {
     color: 'red',
     opacity: 1,
 }).addTo(map).bindPopup("Assentamento Vila Nova<br>Área: 845,9289 Ha<br>Perímetro: 16161,6352 m<br>Quantidade de famílias: 25<br>Município: Santa Crus do Piauí<br>Território de Desenvolvimento: Vale do Canindé")
+
+var saojoaodoarraial_nossasenhoradefatima = L.geoJSON(saojoaodoarraial_nossasenhoradefatima, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Nossa Senhora de Fátima<br>Área: 1027,5816 Ha<br>Perímetro: 15360,957 m<br>Quantidade de famílias: <br>Município: São João do Arraial<br>Território de Desenvolvimento: Cocais")
+
+var saojoaodoarraial_santaluzia = L.geoJSON(saojoaodoarraial_santaluzia, {
+    color: 'red',
+    opacity: 1,
+}).addTo(map).bindPopup("Assentamento Santa Luzia<br>Área: 774,1447 Ha<br>Perímetro: 19432,6375 m<br>Quantidade de famílias: <br>Município: São João do Arraial<br>Território de Desenvolvimento: Cocais")
 
 var saomigueldabaixagrande_mcruz = L.geoJSON(saomigueldabaixagrande_mcruz, {
     color: 'red',
@@ -217,6 +252,8 @@ var overlayers = [
             "Viva Feliz": amarante_vivafeliz,
             "Chapada do Hamilton": angical_chapadadohamilton,
             "Barro Vermelho": aroazes_barrovermelho,
+            "Bacabas": batalha_bacabas,
+            "Caiçarihha": batalha_caicarinha,
             "Maganos": batalha_maganos,
             "Buritizinho": beneditinos_buritizinho,
             "Cana Brava": buritidosmontes_canabrava,
@@ -226,7 +263,11 @@ var overlayers = [
             "Canela de Velho": floriano_caneladevelho,
             "Cacimbinha": geminiano_cacimbinha,
             "Lagoa dos Cocos": jardimdomulato_lagoadoscocos,
+            "Santa Cruz": jatoba_santa_luz,
+            "Aninga": joaquimpires_aninga,
+            "Alto Alegre": josedefreitas_altoalegre,
             "Lembrada": josedefreitas_lembrada,
+            "Sol Nascente": josedefreitas_solnascente,
             "Espirito Santo": lagoadopiaui_espiritosanto,
             "Mãe D'Água": novooriente_maedagua,
             "Palma": patos_palma,
@@ -235,6 +276,8 @@ var overlayers = [
             "Cachoeira": piripiri_cachoeira,
             "Sabiá": piripiri_sabia,
             "Vila Nova": santacruzdopiaui_vilanova,
+            "Nossa Senhora de Fátima": saojoaodoarraial_nossasenhoradefatima,
+            "Santa Luzia": saojoaodoarraial_santaluzia,
             "M. Cruz": saomigueldabaixagrande_mcruz,
             "Caraibas": saopedro_caraibas,
             "Todos os Santos": saopedro_todosossantos,
