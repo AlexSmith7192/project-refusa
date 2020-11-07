@@ -140,3 +140,39 @@ footer {
 .lista-muni-dir {
     float: right;
 }
+
+/* icons */
+.center-icons{
+	background-color: black;
+	padding: 40px;
+	text-align: right;
+}
+
+
+i{
+   color: white;
+   font-size: 26px;
+   padding: 13px;
+   border: 2px solid white;
+   border-radius: 5px;
+}
+i:hover{
+	background-color: gray;
+}
+/* icons */
+
+
+/* copyright */
+.copyright-footer{
+	text-align: center;
+}
+
+.text-copyright{
+	color: white;
+	position: relative;
+	bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 200;
+}
+/* copyright */
