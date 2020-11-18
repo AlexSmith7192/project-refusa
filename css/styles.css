@@ -1,13 +1,15 @@
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: #e7e7e7;
+	/*background-color: #e7e7e7;*/
 }
 
+/* Padroniza espaço ocupado pelo conteúdo da página */
 .container {
     margin: 0 auto;
     width: 96%;
 }
 
+/* Cabeçalho */
 header {
     position: relative;
 }
@@ -97,18 +99,27 @@ header {
 #map {
 	width: 100%;
     height: 100vh;
-    box-shadow: 5px 5px 5px #888;
+	/*box-shadow: 5px 5px 5px #888;*/
+	bottom: 5%;
 }
 
-.logo-ifpi-rodape {
-	width: 200px;
+table {
+	margin: 1% 0 1% 0;
+}
+
+table {
+	top: 5%;
+	bottom: 5%;
+}
+
+.logos-parceiros {
+	width: 150px;
 	height: 150px;
 }
 
 footer {
-    background-color: lightgray;
-    position: relative;
-    height: 200px;
+	position: relative;
+	/*background-color: #e7e7e7;*/
 }
 
 .muni-rodape {
