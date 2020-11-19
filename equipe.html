@@ -2,10 +2,18 @@
 <html lang="pt-br">
 <head>
     <title>Equipe</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<meta name="author" content="Vinicius Developer Front-end">
+	<meta name="author" content="Alex Smith">
+	<meta name="description" content="Site do Projeto REFUSA , Instituto Federal Piauí ">
+	<meta name="keywords" content="Regularização fundiária, IFPI, SAF, FADEX, Projeto, Teresina, Piauí, Bahia">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css ">
+   
     <!-- Adptando site para mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!-- Padronizando os espaçamentos com o reset.css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/equipe.css">
@@ -19,7 +27,7 @@
 		<![endif]-->
 
 		<!-- Conteúdo do cabeçalho -->
-		<h1><a href="index.html"><img src="imagens/logo-refusa-hori.png" alt="REFUSA" class="logo-topo"></a></h1>
+		<h1><a href="index.html"><img src="imagens/logo-refusa-vert.png" alt="REFUSA" class="logo-topo"></a></h1>
 
 		<h1 class="titulo">Regularização fundiária do Semiárido</h1>
 
@@ -36,7 +44,7 @@
     
     <article class="container">
         <section>
-            <img src="./imagens_equipe/prof_adriano.jpeg" alt="Adriano D'Carlos">
+            <img src="./imagens_equipe/prof_adriano.jpeg" alt="Adriano D'Carlos" class="perfil">
             <p>Adriano D’Carlos Batista Oliveira</p>
             <p>Função: Coordenador</p>
             <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4467261T6" target="_blank">Curriculum Lattes</a></p>
@@ -44,7 +52,7 @@
         </section>
 
         <section>
-            <img src="./imagens_equipe/alex_silva.jpeg" alt="Alex Smith">
+            <img src="./imagens_equipe/alex_silva.jpeg" alt="Alex Smith" class="perfil">
             <p>Alex Pereira da Silva</p>
             <p>Função: Bolsista Geoprocessamento</p>
             <p>Linkedin: <a href="https://www.linkedin.com/in/alex-smith-12a451179/" target="_blank">Alex Smith</a></p>
@@ -52,7 +60,7 @@
         </section>
 
         <section>
-            <img src="./imagens_equipe/prof_celso.jpeg" alt="Antônio Celso">
+            <img src="./imagens_equipe/prof_celso.jpeg" alt="Antônio Celso" class="perfil">
             <p>Antônio Celso de Sousa Leite </p>
             <p>Função: Coordenador</p>
             <p><a href="http://lattes.cnpq.br/3962648378968779" target="_blank">Curriculum Lattes</a></p>
@@ -60,7 +68,7 @@
         </section>
 
         <section>
-            <img src="./imagens_equipe/carlos.jpg" alt="Carlos André">
+            <img src="./imagens_equipe/carlos.jpg" alt="Carlos André" class="perfil">
             <p>Carlos André Carvalho da Silva</p>
             <p>Função: Bolsista Geoprocessamento e Mídias</p>
             <p><a href="http://lattes.cnpq.br/5215825864055073" target="_blank">Curriculum Lattes</a></p>
@@ -69,14 +77,14 @@
         </section>
 
         <section>
-            <img src="./imagens_equipe/elisangela.jpeg" alt="Maria Elisangela"> 
+            <img src="./imagens_equipe/elisangela.jpeg" alt="Maria Elisangela" class="perfil"> 
             <p>Maria Elisangela da Silva</p>
             <p>Função: Bolsista Geoprocessamento</p>
             <p>Email: elisangelademaria13@gmail.com</p>
         </section>
 
         <section>
-            <img src="./imagens_equipe/prof_israel.jpeg" alt="Israel Costa">
+            <img src="./imagens_equipe/prof_israel.jpeg" alt="Israel Costa" class="perfil">
             <p>Israel de Oliveira Costa</p>
             <p>Função: Coordenador</p>
             <p><a href="http://lattes.cnpq.br/2524748431528357" target="_blank">Curriculum Lattes</a></p>
@@ -84,7 +92,7 @@
         </section>
 
         <section>
-            <img src="./imagens_equipe/jose_augusto.jpeg" alt="José Augusto">
+            <img src="./imagens_equipe/jose_augusto.jpeg" alt="José Augusto" class="perfil">
             <p>José Augusto Santos Teixeira</p>
             <p>Função: Bolsista Geoprocessamento</p>
             <p><a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=A15D526F9FA4788269FF05E85B01D810" target="_blank">Curriculum Lattes</a></p>
@@ -96,8 +104,26 @@
     <footer>
 		<!-- Conteúdo do rodápe -->
 		<div class="container">
-			<img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI" class="logo-ifpi-rodape">
+			
+
+			<table> 
+				<tr>
+					<th colspan="2">Parceiros:</th>
+				</tr>
+
+				<tr>
+					<td><img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI" class="logos-parceiros"></td>
+					<td><img src="imagens/logo_fadex.png" alt="Logo da FADEX" class="logos-parceiros"></td>
+				</tr>
+				
+				<tr>
+					<td><img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura" class="logos-parceiros"></td>
+					<td><img src="imagens/saf_vertical.svg.png" alt="Logo da SAF" class="logos-parceiros"></td>
+				</tr>
+			</table>
+
 		</div>
+
 
 		<div class="muni-rodape container" id="municipios">
 			<h1 class="titulo-muni">Municípios abrangidos pelo Projeto Refusa</h1>
@@ -112,23 +138,20 @@
                 <li>Beneditinos</li>			
                 <li>Buriti dos Montes</li>            
                 <li>Campo Maior</li>            
-                <li>Demerval Lobão</li>
-            </ul>
-
-            <ul class="lista-muni-cen">    
-                <li>Elesbão Veloso</li>
+				<li>Demerval Lobão</li>
+				<li>Elesbão Veloso</li>
                 <li>Flores do Piauí</li>
                 <li>Floriano</li>
                 <li>Geminiano</li>
+            </ul>
+
+            <ul class="lista-muni-cen">    
                 <li>Itaueira</li>
                 <li>Jardim do Mulato</li>
                 <li>José de Freitas</li>
                 <li>Lagoa do Piauí</li>
-                <li>Nazaré do Piauí</li>
-            </ul>
-
-            <ul class="lista-muni-dir">
-                <li>Novo Oriente do Piauí</li>
+				<li>Nazaré do Piauí</li>
+				<li>Novo Oriente do Piauí</li>
                 <li>Patos so Piauí</li>
                 <li>Pedro II</li>
                 <li>Piripiri</li>
@@ -137,10 +160,23 @@
                 <li>São Pedro do Piauí</li>
                 <li>Teresina</li>
                 <li>Valença do Piauí</li>
-            </ul>            
-        </div>
+            </ul>          
+		</div>
+
         
 	</footer>
+
+
+		<div class="center-icons">
+			<a  class="links-footer" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a  class="links-footer" href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a  class="links-footer" href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a  class="links-footer" href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
+			 
+			<div class="copyright-footer">
+				<p class="text-copyright">copyright © 2020 | REFUSA Todos os direitos reservados</p>
+			</div>  
+		</div>		
 
 </body>
 
