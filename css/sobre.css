@@ -12,49 +12,43 @@ header {
 	border-bottom: solid 1px;
 }
 
-/*Logo Projeto Refusa*/
-.logo-topo {
-	width: 225px;
-	height: 100px;
+/* Cabeçalho */
+header {
+    position: relative;
 }
 
-.titulo {
-	font-size: 50px;
-	text-align: right;
-	padding-right: 3%;
+/* Logo do projeto */
+.logo-img{
+	width: 200px;
 	position: absolute;
-	top: 5%;
-	right: 0;
-	color: green;
+	top: -16px;
+	left: 0;
 }
 
-.menu-opcoes { /* Posicionando o menu */
-	position: absolute;
-	bottom: 2%; /* 0 embaixo */
-	right: 0; /* 0 a direita */
+.menu-side{
+	 text-align: center;
+	
+	 background-color: white;
+	 padding: 46px;
+	 position: relative;
+	 bottom: 0px;
 }
 
-.menu-opcoes ul {
-	font-size: 15px;
+.link-menu:hover{
+	 border-bottom: 3px solid rgb(22, 22, 22);
 }
 
-.menu-opcoes ul li {
-	display: inline; /* barra do menu na horizontal */
-	margin-left: 20px; /* margen entre os elementos */
+.menu-side a{
+	 padding: 15px;
+	 font-size: 16px;
+	 font-weight: 600;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	
+	 color: #1d9227;
 }
+/* Fim do cabeçalho */
 
-.menu-opcoes a {
-	color: #003366;
-}
-
-/* mudando estado dos links */
-.menu-opcoes a:hover { /* passar o mouse */
-	color: #007DC6;
-}
-
-.menu-opcoes a:active { /* clicar no item */
-	color: #867DC6;
-}
 
 .texto-principal {
 	top: 2%;

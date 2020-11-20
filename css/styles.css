@@ -1,6 +1,6 @@
+/* Familia de fontes da página*/
 body {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	/*background-color: #e7e7e7;*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", 'Poppins', sans-serif;
 }
 
 /* Padroniza espaço ocupado pelo conteúdo da página */
@@ -14,94 +14,94 @@ header {
     position: relative;
 }
 
-/*Logo Projeto Refusa*/
-.logo-topo {
-	width: 225px;
-	height: 100px;
-}
-
-.titulo {
-	font-size: 50px;
-	text-align: right;
-	padding-right: 3%;
+/* Logo do projeto */
+.logo-img{
+	width: 200px;
 	position: absolute;
-	top: 5%;
-	right: 0;
-	color: green;
+	top: -16px;
+	left: 0;
 }
 
-.menu-opcoes { /* Posicionando o menu */
-	position: absolute;
-	bottom: 2%; /* 0 embaixo */
-	right: 0; /* 0 a direita */
+.menu-side{
+	 text-align: center;
+	
+	 background-color: white;
+	 padding: 46px;
+	 position: relative;
+	 bottom: 0px;
 }
 
-.menu-opcoes ul {
-	font-size: 15px;
+.link-menu:hover{
+	 border-bottom: 3px solid rgb(22, 22, 22);
 }
 
-.menu-opcoes ul li {
-	display: inline; /* barra do menu na horizontal */
-	margin-left: 20px; /* margen entre os elementos */
+.menu-side a{
+	 padding: 15px;
+	 font-size: 16px;
+	 font-weight: 600;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	
+	 color: #1d9227;
 }
+/* Fim do cabeçalho */
 
-.menu-opcoes a {
-	color: #003366;
-}
 
-/* mudando estado dos links */
-.menu-opcoes a:hover { /* passar o mouse */
-	color: #007DC6;
-}
-
-.menu-opcoes a:active { /* clicar no item */
-	color: #867DC6;
-}
-
+/* Adicionando e estilizando uma imagem de fundo para a div*/
 .img-inicial {
+	background-image: url(../imagens/teste-home-familia.jpg);
 	position: relative;
-
+	
+	background-size: cover;
+	height: 100vh;
+	padding-top: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	background-color: #777163;
+	color: whitesmoke;
 }
 
-.texto-oque {
-	position: absolute;
-	top: 2%;
-	left: 2%;
-	width: 35%;
+/* Centralizando textos sobre a imagem principal*/
+.center-text{
+	text-align: center;
 }
 
-.texto-obj {
-	position: absolute;
-	top: 32%;
-	right: 25%;
-	width: 35%;
+/* Estilizando os titulos*/
+.heading-title{
+	font-weight: 700;
 }
 
-.texto-home1 {
-	color: black;
+.titulo-home-1, .titulo-home-2{
+	font-size: 45px;
+	font-weight: bolder;
+	text-transform: capitalize;
 }
 
-.texto-home2 {
-	color: white;
+/* Espaçamento entre os textos da página principal */
+.texto-oque, .titulo-home-2, .text-home-2 {
+	margin-top: 2%;
 }
 
-.texto-home1, .texto-home2 {
-	text-align: justify;
-	font-size: 25px;
-	color: white;
+/* Estilizando as duas descrições */
+.text-home-1, .text-home-2 {
+	text-align: center;
+	line-height: 36px;
+    font-size: 20px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
 }
 
-.img-home {
-	width: 100%;
-	height: 650px;
-}
 
+/* Configurações do mapa*/
 #map {
 	width: 100%;
     height: 100vh;
-	/*box-shadow: 5px 5px 5px #888;*/
 	bottom: 5%;
+	margin-top: 1%;
 }
+/* Fim do mapa */
+
 
 table {
 	margin: 1% 0 1% 0;
@@ -119,7 +119,6 @@ table {
 
 footer {
 	position: relative;
-	/*background-color: #e7e7e7;*/
 }
 
 .muni-rodape {
@@ -152,6 +151,7 @@ footer {
     float: right;
 }
 
+
 /* icons */
 .center-icons{
 	background-color: black;
@@ -170,7 +170,7 @@ i{
 i:hover{
 	background-color: gray;
 }
-/* icons */
+/* icones */
 
 
 /* copyright */
