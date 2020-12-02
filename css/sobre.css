@@ -78,20 +78,6 @@ section {
 	font-size: 1.3em;
 }
 
-table {
-	margin: 1% 0 1% 0;
-}
-
-table {
-	top: 5%;
-	bottom: 5%;
-}
-
-.logos-parceiros {
-	width: 150px;
-	height: 150px;
-}
-
 
 #myBtn {
 	display: none;
@@ -112,6 +98,21 @@ table {
 	background-color: #555;
   }
 
+
+
+table {
+	margin: 1% 0 1% 0;
+}
+
+table {
+	top: 5%;
+	bottom: 5%;
+}
+
+.logos-parceiros {
+	width: 150px;
+	height: 150px;
+}
 
 
 footer {
@@ -182,5 +183,6 @@ i:hover{
 	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
 	font-weight: 200;
+	text-align: center;
 }
 /* copyright */
