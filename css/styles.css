@@ -76,6 +76,7 @@ header {
 	font-size: 45px;
 	font-weight: bolder;
 	text-transform: capitalize;
+	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /* Espaçamento entre os textos da página principal */
@@ -85,11 +86,11 @@ header {
 
 /* Estilizando as duas descrições */
 .text-home-1, .text-home-2 {
-	text-align: center;
+	text-shadow: black 0.2em 0.2em 0.2em;
+	font-size: 23px;
+	font-weight: bold;
 	line-height: 36px;
-    font-size: 20px;
-	font-weight: 400;
-	font-family: 'Poppins', sans-serif;
+	text-align: center;
 }
 
 
