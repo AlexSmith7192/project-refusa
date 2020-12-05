@@ -1,5 +1,5 @@
 body {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", 'Poppins', sans-serif;
 }
 
 .container {
@@ -54,10 +54,10 @@ header {
 	top: 2%;
 }
 
-p {
+.texto {
 	text-align: justify;
 	padding: 1% 0 0 0;
-	font-size: 1.1em;
+	font-size: 1.0em;
 }
 
 .negrito {
@@ -75,7 +75,7 @@ section {
 }
 
 .cpr-titulo {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 
@@ -150,13 +150,26 @@ footer {
     float: right;
 }
 
+.endereco {
+	float: left;
+	color: whitesmoke;
+	text-align: justify;
+	padding: 2% 0% 0% 2%;
+	width: 67%;
+}
+
 /* icons */
 .center-icons{
 	background-color: black;
-	padding: 40px;
-	text-align: right;
+	height: 30vh;
+	text-align: center;
 }
 
+.redes-sociais {
+	float: right;
+	width: 30%;
+	padding-top: 2%;
+}
 
 i{
    color: white;
@@ -168,21 +181,24 @@ i{
 i:hover{
 	background-color: gray;
 }
-/* icons */
+/* icones */
 
 
 /* copyright */
-.copyright-footer{
-	text-align: center;
+.copyright {
+	width: 33%;
+	margin: auto;
+	padding-top: 6%;
 }
+
 
 .text-copyright{
 	color: white;
-	position: relative;
-	bottom: 20px;
+
 	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
 	font-weight: 200;
-	text-align: center;
+	padding-left: 52%;
+	margin-top: 2%;
 }
 /* copyright */

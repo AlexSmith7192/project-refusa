@@ -42,14 +42,14 @@ header {
 	 text-transform: uppercase;
 	 text-decoration: none;
 	
-	 color: #1d9227;
+	 color:#01624F;
 }
 /* Fim do cabeçalho */
 
 
 /* Adicionando e estilizando uma imagem de fundo para a div*/
 .img-inicial {
-	background-image: url(../imagens/teste-home-familia.jpg);
+	background-image: url(../imagens/background.jpg);
 	position: relative;
 	
 	background-size: cover;
@@ -58,8 +58,7 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
-	background-color: #777163;
-	color: whitesmoke;
+	color: #01624F;
 }
 
 /* Centralizando textos sobre a imagem principal*/
@@ -76,7 +75,7 @@ header {
 	font-size: 45px;
 	font-weight: bolder;
 	text-transform: capitalize;
-	text-shadow: black 0.1em 0.1em 0.2em;
+	/*text-shadow: black 0.1em 0.1em 0.2em;*/
 }
 
 /* Espaçamento entre os textos da página principal */
@@ -86,7 +85,7 @@ header {
 
 /* Estilizando as duas descrições */
 .text-home-1, .text-home-2 {
-	text-shadow: black 0.2em 0.2em 0.2em;
+	/*text-shadow:black 0.2em 0.2em 0.2em;*/
 	font-size: 23px;
 	font-weight: bold;
 	line-height: 36px;
@@ -173,13 +172,26 @@ footer {
 }
 
 
+.endereco {
+	float: left;
+	color: whitesmoke;
+	text-align: justify;
+	padding: 2% 0% 0% 2%;
+	width: 67%;
+}
+
 /* icons */
 .center-icons{
 	background-color: black;
-	padding: 40px;
-	text-align: right;
+	height: 30vh;
+	text-align: center;
 }
 
+.redes-sociais {
+	float: right;
+	width: 30%;
+	padding-top: 2%;
+}
 
 i{
    color: white;
@@ -195,16 +207,20 @@ i:hover{
 
 
 /* copyright */
-.copyright-footer{
-	text-align: center;
+.copyright {
+	width: 33%;
+	margin: auto;
+	padding-top: 6%;
 }
+
 
 .text-copyright{
 	color: white;
-	position: relative;
-	bottom: 20px;
+
 	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
 	font-weight: 200;
+	padding-left: 52%;
+	margin-top: 2%;
 }
 /* copyright */
