@@ -11,7 +11,8 @@ body {
 
 /* Cabeçalho */
 header {
-    position: relative;
+	position: relative;
+	border-bottom: 2px solid #01624F;
 }
 
 /* Logo do projeto */
@@ -45,12 +46,64 @@ header {
 }
 /* Fim do cabeçalho */
 
-
-.mensagem {
-    font-size: 3em;
-    text-align: center
+.form-mensagem-1 {
+	padding-top: 3%;
 }
 
+.form-mensagem-1, .form-mensagem-2 {
+	text-align: center;
+	margin-top: 1%;
+}
+
+.form-center {
+	margin: auto;
+	width: 70%;
+	margin-top: 4%;
+	margin-bottom: 5%;
+}
+
+
+label {
+	display: inline-block;
+	font-size: 1.0em;
+	font-weight: bold;
+	width: 150px;
+	padding: 2% 0 1% 0;
+}
+
+
+input, textarea {
+	border: 1px solid #ccc;
+	box-shadow: inset 2px 2px 2px #eee;
+
+	display: inline-block;
+
+	font-size: 1.0em;
+	margin: 2px 5px;
+
+	width: 97%;
+}
+
+
+textarea {
+	height: 150px;
+}
+
+
+.asterisco {
+	color: red;
+}
+
+
+.btn-enviar {
+	border-radius: 5px;
+	margin-top: 1%;
+	background-color: #01624F;
+	color: #f7931e;
+	padding: 6px 12px;
+	font-size: 1.0em;
+	font-weight: bold;
+}
 
 
 #myBtn {
@@ -68,7 +121,7 @@ header {
 	border-radius: 10px;
   }
   
-  #myBtn:hover {
+#myBtn:hover {
 	background-color: #555;
   }
 
@@ -89,6 +142,7 @@ table {
 
 footer {
 	position: relative;
+	border-top: 2px solid #01624F;
 }
 
 .muni-rodape {
