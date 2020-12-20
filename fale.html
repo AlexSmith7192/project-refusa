@@ -48,7 +48,7 @@
 	</div>
 
 	<div class="form-center">
-		<form action="" method="post" class="container">
+		<form action="envia_fale.php" method="post" name="form" class="container">
 			<div>
 				<label for="nome">Nome <span class="asterisco">*</span></label>
 				<input type="nome" id="nome" name="nome" placeholder="Digite seu nome completo" required>
@@ -60,13 +60,13 @@
 			</div>
 
 			<div>
-				<label for="subject">Assunto <span class="asterisco">*</span></label>
-				<input type="text" id="subject" data-ls-module="charCounter" maxlength="255" placeholder="Nos diga qual é o seu problema ou ideia" required>
+				<label for="assunto">Assunto <span class="asterisco">*</span></label>
+				<input type="text" id="assunto" data-ls-module="charCounter" maxlength="255" placeholder="Nos diga qual é o seu problema ou ideia" required>
 			</div>
 
 			<div>
-				<label for="content">Mensagem <span class="asterisco">*</span></label>
-				<textarea name="text" id="content" data-ls-module="charCounter" maxlength="8000" placeholder="Escreva a sua mensagem, em até 8000 caracteres" required></textarea>
+				<label for="mensagem">Mensagem <span class="asterisco">*</span></label>
+				<textarea name="text" id="mensagem" data-ls-module="charCounter" maxlength="8000" placeholder="Escreva a sua mensagem, em até 8000 caracteres" required></textarea>
 			</div>
 
 			<button class="btn-enviar">Enviar mensagens</button>
