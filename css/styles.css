@@ -65,11 +65,6 @@ header {
 	text-align: center;
 }
 
-/* Estilizando os titulos*/
-.heading-title{
-	font-weight: 700;
-}
-
 .titulo-home-1, .titulo-home-2{
 	font-size: 45px;
 	font-weight: bolder;
@@ -130,6 +125,7 @@ table {
 	top: 5%;
 	bottom: 5%;
 }
+
 
 .logos-parceiros {
 	width: 150px;

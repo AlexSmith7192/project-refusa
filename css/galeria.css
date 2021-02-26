@@ -1,6 +1,15 @@
 .img-galeria {
   width: 30%;
   height: 45vh;
+  padding: 1% 0 0 1%;
+}
+
+.titulo-secao {
+  text-align: center;
+  font-size: 2em;
+  padding: 3% 0 1% 0;
+  font-weight: 500;
+  color: #01624F;
 }
 
 
