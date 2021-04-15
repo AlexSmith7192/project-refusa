@@ -90,9 +90,7 @@ header {
 /* Configurações do mapa*/
 #map {
 	width: 100%;
-    height: 100vh;
-	bottom: 5%;
-	margin-top: 1%;
+  height: 100vh;
 }
 /* Fim do mapa */
 
