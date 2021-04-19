@@ -110,7 +110,7 @@ header {
 	border-radius: 10px;
   }
   
-  #myBtn:hover {
+#myBtn:hover {
 	background-color: #555;
   }
 
@@ -225,20 +225,39 @@ i:hover{
 }
 
 @media (max-width: 768px) {
+	.logo-img{
+		width: 200px;
+		top: 0;
+		position: relative;
+	}
 	
+	.menu-side {
+		text-align: center;
+	
+		background-color: white;
+		position: relative;
+		bottom: 0px;
+	}
+
+	.menu-side a {
+		margin: 10px;
+		padding: 12px;
+		font-size: 13px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color:#01624F;
+ 	}
+
+	.link-menu {
+		padding: 2%;
+		margin: 2%;
+	}
+
+	.link-menu:hover{
+		border-bottom: none;
+ }
 }
 
 @media (max-width: 480px) {
-	.logo-img{
-		width: 100px;
-		top: -16px;
-		left: 0;
-		display: none;
-	}
 	
-	.menu-side a {
-		padding: 10px;
-		font-size: 10px;
-		font-weight: 400;
- }
 }
