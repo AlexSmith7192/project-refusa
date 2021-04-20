@@ -4,89 +4,49 @@
 <head>
 	<title>REFUSA</title>
 	<meta charset="utf-8">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
-	<meta name="author" content="Vinicius Developer Front-end">
 	<meta name="author" content="Alex Smith">
 	<meta name="description" content="Site do Projeto REFUSA, Instituto Federal Piauí ">
 	<meta name="keywords" content="Regularização fundiária, IFPI, SAF, FADEX, Projeto, Teresina, Piauí, Bahia">
-
-	<!-- Adcionando bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-		crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css ">
-
-	<!-- Adptando site para mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 
-	<!-- adiciona botão de volta ao topo -->
 	<script src="/js/button_topo.js"></script>
 </head>
 
 <body>
 	<!-- Conteúdo do cabeçalho -->
-	<header class="container col-12">
-		<div class="row">
-			<div class="col-2">
-				<h1><img class="img-fluid" src="imagens/logo-refusa-vert.png" alt="PROJETO REFUSA"></h1>
-			</div>
+	<header id="header" class="container">
+				<img id="logo-refusa-header" src="imagens/logo-refusa-vert.png" alt="PROJETO REFUSA">
 
-			<div class="col-md-10 d-flex align-items-center justify-content-around">
-				<a class="" href="index.html">Página Inicial</a>
-				<a class="" href="map.html" target="_blank">Mapa</a>
-				<a class="" href="#municipios">Municípios</a>
-				<a class="" href="equipe.html">Equipe</a>
-				<a class="" href="sobre.html">Sobre o projeto</a>
-				<a class="" href="galeria.html">Galeria de fotos</a>
-			</div>
-		</div>
+			<nav id="navbar">
+				<a class="nav-link" href="index.html">Inicio</a>
+				<a class="nav-link" href="map.html" target="_blank">Mapa</a>
+				<a class="nav-link" href="equipe.html">Equipe</a>
+				<a class="nav-link" href="sobre.html">Sobre</a>
+				<a class="nav-link" href="galeria.html">Galeria</a>
+			</nav>
 	</header>
 	<!--Fim do cabeçalho-->
 
-	<section class="container">
+	<section class="container main">
 		<div class="">
 			<h1 class="">O que é o Projeto REFUSA?</h1>
+
+			<p class="">É um projeto de apoio técnico-científico para fortalecimento e consolidação das propriedades da agricultura familiar na região semiárida dos Estados da Bahia e Piauí, preferencialmente as oriundas de ações de crédito fundiário desenvolvidos pela SEAD.</p>
 		</div>
 
 		<div class="">
-			<p class="">É um projeto de apoio técnico-científico para fortalecimento e consolidação das
-				propriedades da agricultura familiar na região semiárida dos Estados da Bahia e Piauí, preferencialmente as
-				oriundas de ações de crédito fundiário desenvolvidos pela SEAD.</p>
-		</div>
+			<h1 class=""> Objetivos </h1>
 
-		<div class="">
-			<div class="">
-				<h1 class=""> Objetivos </h1>
-			</div>
-
-			<p class=""> Realização de estudos e ações que permitam a regularização cadastral, o
-				georreferenciamento e o cadastramento fundiário de propriedades oriundas de ações de crédito fundiário
-				desenvolvidos pela SEAD no semiárido brasileiro.</p>
+			<p class=""> Realização de estudos e ações que permitam a regularização cadastral, o georreferenciamento e o cadastramento fundiário de propriedades oriundas de ações de crédito fundiário	desenvolvidos pela SEAD no semiárido brasileiro.</p>
 		</div>
 	</section>
 
 	<button onclick="topFunction()" id="myBtn" title="Ir ao topo">Topo</button>
 
-	<footer>
-		<!-- Conteúdo do rodápe -->
-		<div class="container">
-			<h2>Parceiros:</h2>
-		</div>
-		<div class="container d-flex justify-content-around">
-			<img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI" class="img-fluid col-3">
-			<img src="imagens/logo_fadex.png" alt="Logo da FADEX" class="img-fluid col-3">
-			<img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura" class="img-fluid col-3">
-			<img src="imagens/saf_vertical.svg.png" alt="Logo da SAF" class="img-fluid col-3">
-		</div>
-
-
-		<div class="" id="municipios">
-			<h1 class="">Municípios abrangidos pelo Projeto Refusa</h1>
+	<section class="container">
+		<div id="municipios">
+			<h2 class="">Municípios abrangidos pelo Projeto Refusa</h2>
 
 			<ul class="">
 				<li>Alto Longá</li>
@@ -103,9 +63,6 @@
 				<li>Flores do Piauí</li>
 				<li>Floriano</li>
 				<li>Geminiano</li>
-			</ul>
-
-			<ul class="">
 				<li>Itaueira</li>
 				<li>Jardim do Mulato</li>
 				<li>José de Freitas</li>
@@ -122,32 +79,45 @@
 				<li>Valença do Piauí</li>
 			</ul>
 		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h2>Parceiros:</h2>
+		</div>
+		<div class="container img-parceiros">
+			<img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI" class="img-ifpi">
+			<img src="imagens/logo_fadex.png" alt="Logo da FADEX" class="img-fadex">
+			<img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura" class="img-ministerio">
+			<img src="imagens/saf_vertical.svg.png" alt="Logo da SAF" class="img-saf">
+		</div>
+	</section>
+
+	<footer>
+		<!-- Conteúdo do rodápe -->
+		<div class="">
+			<div class="">
+				<h2 class="">Endereço:</h2>
+				<p class="">Rua Quintino Bocaiúva, S/N</p>
+				<p class="">Centro (Norte), Teresina - PI, 64000-060</p>
+
+				<a href="https://www.google.com.br/maps/place/Instituto+Federal+do+Piauí+-+Campus+Teresina+Central+-+Predio+C/@-5.0889124,-42.8104098,19.25z/data=!4m5!3m4!1s0x78e376201f52063:0x86f3c4744efc62db!8m2!3d-5.0887755!4d-42.8102821"
+					target="_blank">(ver no maps)</a><br>
+
+				<a href="fale.html" target="_blank">(Fale Conosco)</a>
+
+				<p class="">copyright © 2020 | REFUSA Todos os direitos reservados</p>
+			</div>
+
+			<div class="">
+				<a class="" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a class="" href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a class="" href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a class="" href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
 	</footer>
 
-
-	<div class="">
-		<div class="">
-			<h2 class="">Endereço:</h2>
-			<p class="">Rua Quintino Bocaiúva, S/N</p>
-			<p class="">Centro (Norte), Teresina - PI, 64000-060</p>
-
-			<a href="https://www.google.com.br/maps/place/Instituto+Federal+do+Piauí+-+Campus+Teresina+Central+-+Predio+C/@-5.0889124,-42.8104098,19.25z/data=!4m5!3m4!1s0x78e376201f52063:0x86f3c4744efc62db!8m2!3d-5.0887755!4d-42.8102821"
-				target="_blank">(ver no maps)</a><br>
-
-			<a href="fale.html" target="_blank">(Fale Conosco)</a>
-
-			<p class="">copyright © 2020 | REFUSA Todos os direitos reservados</p>
-		</div>
-
-
-		<div class="">
-			<a class="" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a class="" href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a class="" href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i
-					class="fab fa-facebook-f"></i></a>
-			<a class="" href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
-		</div>
-	</div>
 
 
 
