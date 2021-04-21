@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", 'Poppins', sans-serif;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
 }
 
 .container {
@@ -111,9 +112,23 @@ ul {
   flex-grow: 1;
 }
 
-.images-parceiros img {
+#section-partners {
+  background-color: lightgray;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-partners {
+  display: flex;
+}
+
+.images-partners img {
   width: 25%;
-  height: 25vh;
+  height: 35vh;
 }
 
 /* 480 - 768 - 1280 */
@@ -146,7 +161,16 @@ ul {
   .counties ul li {
     padding: 1% 2%;
     font-size: 17px;
-  }  
+  }
+
+  .images-partners {
+    flex-wrap: wrap;
+  }
+
+  .images-partners img {
+    width: 50%;
+    height: 50vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -195,5 +219,9 @@ ul {
   .counties ul li {
     padding: 2% 3%;
     font-size: 13px;
-  } 
+  }
+
+  .images-partners img {
+    height: 35vh;
+  }
 }
