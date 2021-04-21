@@ -62,7 +62,8 @@ body {
 
 .main {
   background-image: url(../imagens/background.jpg);
-	
+	background-repeat: no-repeat;
+  background-size: 100%;
 	color: #01624F;
   text-align: center;
   font-weight: bolder;
@@ -78,10 +79,36 @@ body {
 .paragraph-home {
 	line-height: 36px;
   padding-bottom: 2%;
+  text-align: justify;
+  text-indent: 2em;
 }
 
-li {
+ul {
   list-style: none;
+}
+
+.counties {
+  display: flex;
+  flex-direction: column;
+  color: #fab235;
+}
+
+.counties h2 {
+  padding: 2% 0;
+  font-size: 35px;
+}
+
+.counties ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+}
+
+.counties ul li {
+  padding: 1% 1%;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  flex-grow: 1;
 }
 
 .images-parceiros img {
@@ -101,7 +128,7 @@ li {
   }
 
   .main {
-    font-size: 17px;
+    font-size: 20px;
   }
   
   .title-home {
@@ -110,6 +137,15 @@ li {
   
   .paragraph-home {
     line-height: 23px;
+  }
+  
+  .counties h2 {
+    font-size: 25px;
+  }
+  
+  .counties ul li {
+    padding: 1% 2%;
+    font-size: 17px;
   }  
 }
 
@@ -141,7 +177,7 @@ li {
   }
 
   .main {
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .title-home {
@@ -151,4 +187,13 @@ li {
   .paragraph-home {
     line-height: 16px;
   }
+
+  .counties h2 {
+    font-size: 18px;
+  }
+  
+  .counties ul li {
+    padding: 2% 3%;
+    font-size: 13px;
+  } 
 }
