@@ -11,7 +11,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 96%;
+    width: 90%;
 }
 
 #header {
@@ -25,16 +25,19 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 #logo-refusa-header {
   width: 20%;
   height: 20vh;
 }
 
 .nav-link {
-  font-size: large;
-  font-weight: 800;
+  font-size: 1.2em;
+  font-weight: 600;
 	text-transform: uppercase;
-	text-decoration: none;
 	color:#01624F;
 }
 
@@ -66,23 +69,21 @@ body {
 	background-repeat: no-repeat;
   background-size: 100%;
   background-repeat: repeat-y;
-  
+
 	color: #01624F;
   text-align: center;
   font-weight: bolder;
-  font-size: 23px;
+  font-size: 1.4em;
 }
 
 .title-home {
-  font-size: 45px;
+  font-size: 2em;
 	text-transform: capitalize;
   padding: 2% 0;
 }
 
 .paragraph-home {
-	line-height: 36px;
   padding-bottom: 2%;
-  text-align: justify;
   text-indent: 2em;
 }
 
@@ -98,7 +99,7 @@ ul {
 
 .counties h2 {
   padding: 2% 0;
-  font-size: 35px;
+  font-size: 1.5em;
 }
 
 .counties ul {
@@ -110,7 +111,7 @@ ul {
 .counties ul li {
   padding: 1% 1%;
   border: 1px solid lightgray;
-  font-size: 20px;
+  font-size: 0.8em;
   flex-grow: 1;
 }
 
@@ -162,7 +163,7 @@ ul {
 
 i{
   color: white;
-  font-size: 26px;
+  font-size: 1.5em;
   padding: 13px;
   border: 2px solid white;
   border-radius: 5px;
@@ -197,24 +198,20 @@ i:hover{
   }
 
   .main {
-    font-size: 20px;
+    font-size: 1.2em;
   }
   
   .title-home {
-    font-size: 35px;
-  }
-  
-  .paragraph-home {
-    line-height: 23px;
+    font-size: 1.7em;
   }
   
   .counties h2 {
-    font-size: 25px;
+    font-size: 1.3em;
   }
   
   .counties ul li {
     padding: 1% 2%;
-    font-size: 17px;
+    font-size: 0.7em;
   }
 
   .images-partners {
@@ -255,24 +252,19 @@ i:hover{
   }
 
   .main {
-    font-size: 15px;
+    font-size: 1em;
   }
   
   .title-home {
-    font-size: 23px;
-  }
-  
-  .paragraph-home {
-    line-height: 16px;
+    font-size: 1.5em;
   }
 
   .counties h2 {
-    font-size: 18px;
+    font-size: 1em;
   }
   
   .counties ul li {
     padding: 2% 3%;
-    font-size: 13px;
   }
 
   .images-partners img {
