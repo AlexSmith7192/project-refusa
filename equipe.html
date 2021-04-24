@@ -1,196 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="shortcut icon" href="imagens/refusa-favicon.ico" type="image/x-icon">
+
 <head>
-    <title>Equipe</title>
-    <meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<meta name="author" content="Vinicius Developer Front-end">
-	<meta name="author" content="Alex Smith">
-	<meta name="description" content="Site do Projeto REFUSA , Instituto Federal Piauí ">
-	<meta name="keywords" content="Regularização fundiária, IFPI, SAF, FADEX, Projeto, Teresina, Piauí, Bahia">
+  <title>EQUIPE</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Alex Smith">
+  <meta name="description" content="Site do Projeto REFUSA, Instituto Federal Piauí ">
+  <meta name="keywords" content="Regularização fundiária, IFPI, SAF, FADEX, Projeto, Teresina, Piauí, Bahia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css ">
-   
-    <!-- Adptando site para mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
 
-    <!-- Padronizando os espaçamentos com o reset.css -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/equipe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 
-    <script src="/js/button_topo.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/equipe.css">
+
+  <script src="/js/button_topo.js"></script>
 </head>
 
+
 <body>
+  <header>
+    <div id="header" class="container">
+      <img id="logo-refusa-header" src="imagens/logo-refusa-vert.png" alt="PROJETO REFUSA">
 
-    <header class="container">
-		<!--[if lt IE 9]>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+      <nav id="navbar">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="map.html" target="_blank">Mapa</a>
+        <a class="nav-link" href="equipe.html">Equipe</a>
+        <a class="nav-link" href="sobre.html">Sobre</a>
+        <a class="nav-link" href="galeria.html">Galeria</a>
+      </nav>
+    </div>
+  </header>
+  <hr>
 
-		<!-- Conteúdo do cabeçalho -->
-		<div class="menu-side">   
-			<h1><img class="logo-img" src="imagens/logo-refusa-vert.png" alt="PROJETO REFUSA"></h1>
-		
-			<a class="link-menu" href="index.html">Página Inicial</a>
-			<a class="link-menu" href="index.html#map">Mapa</a>
-			<a class="link-menu" href="#municipios">Municípios</a>
-			<a class="link-menu" href="equipe.html">Equipe</a>
-			<a class="link-menu" href="sobre.html">Sobre o projeto</a>
-		</div>
-	</header>
-	<!--Fim do cabeçalho-->
-    
-    <article class="container">
-        <section>
-            <img src="./imagens_equipe/prof_adriano.jpeg" alt="Adriano D'Carlos" class="perfil">
-            <p>Adriano D’Carlos Batista Oliveira</p>
-            <p>Função: Coordenador</p>
-            <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4467261T6" target="_blank">Curriculum Lattes</a></p>
-            <p>Email: adriano.dcarlos@ifpi.edu.br</p>
-        </section>
+  <article class="container">
+    <section class="profile">
+      <img src="./imagens_equipe/prof_adriano.jpeg" alt="Adriano D'Carlos">
 
-        <section>
-            <img src="./imagens_equipe/alex_silva.jpeg" alt="Alex Smith" class="perfil">
-            <p>Alex Pereira da Silva</p>
-            <p>Função: Bolsista Geoprocessamento</p>
-            <p>Linkedin: <a href="https://www.linkedin.com/in/alex-smith-12a451179/" target="_blank">Alex Smith</a></p>
-            <p>Email: alexsmith7192@gmail.com</p>
-        </section>
+      <div>
+        <p>Adriano D’Carlos Batista Oliveira</p>
+        <p>Função: Coordenador</p>
+        <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4467261T6" target="_blank">Curriculum
+            Lattes</a></p>
+        <p>Email: adriano.dcarlos@ifpi.edu.br</p>
+      </div>
+    </section>
+    <hr>
 
-        <section>
-            <img src="./imagens_equipe/prof_celso.jpeg" alt="Antônio Celso" class="perfil">
-            <p>Antônio Celso de Sousa Leite </p>
-            <p>Função: Coordenador</p>
-            <p><a href="http://lattes.cnpq.br/3962648378968779" target="_blank">Curriculum Lattes</a></p>
-            <p>Email: antonio.celso@ifpi.edu.br</p>
-        </section>
+    <section class="profile">
+      <img src="./imagens_equipe/alex_silva.jpeg" alt="Alex Smith">
 
-        <section>
-            <img src="./imagens_equipe/carlos.jpg" alt="Carlos André" class="perfil">
-            <p>Carlos André Carvalho da Silva</p>
-            <p>Função: Bolsista Geoprocessamento e Mídias</p>
-            <p><a href="http://lattes.cnpq.br/5215825864055073" target="_blank">Curriculum Lattes</a></p>
-            <p>Linkedin: <a href="https://www.linkedin.com/mwlite/in/carlos-andr%C3%A9-0a4883144" target="_blank">Carlos André</a></p>
-            <p>Email: karlosandre777@gmail.com</p>
-        </section>
+      <div>
+        <p>Alex Pereira da Silva</p>
+        <p>Função: Bolsista Geoprocessamento</p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/alex-smith-12a451179/" target="_blank">Alex Smith</a>
+        </p>
+        <p>Email: alexsmith7192@gmail.com</p>
+      </div>
+    </section>
+    <hr>
 
-        <section>
-            <img src="./imagens_equipe/prof_israel.jpeg" alt="Israel Costa" class="perfil">
-            <p>Israel de Oliveira Costa</p>
-            <p>Função: Coordenador</p>
-            <p><a href="http://lattes.cnpq.br/2524748431528357" target="_blank">Curriculum Lattes</a></p>
-            <p>Email: israel.costa@ifpi.edu.br</p>
-        </section>
+    <section class="profile">
+      <img src="./imagens_equipe/prof_celso.jpeg" alt="Antônio Celso">
 
-        <section>
-          <img src="./imagens_equipe/prof_israel_lobato.jpeg" alt="Foto de Israel Lobato" class="perfil"> 
-          <p>Israel Lobato Rocha</p>
-          <p>Função: Coordenador</p>
-          <p><a href="http://lattes.cnpq.br/6518724518793037" target="_blank">Curriculum Lattes</a></p>
-          <p>Email: israel.lobato@ifpi.edu.br</p>
-      </section>
+      <div>
+        <p>Antônio Celso de Sousa Leite </p>
+        <p>Função: Coordenador</p>
+        <p><a href="http://lattes.cnpq.br/3962648378968779" target="_blank">Curriculum Lattes</a></p>
+        <p>Email: antonio.celso@ifpi.edu.br</p>
+      </div>
+    </section>
+    <hr>
 
-        <section>
-            <img src="./imagens_equipe/jose_augusto.jpeg" alt="José Augusto" class="perfil">
-            <p>José Augusto Santos Teixeira</p>
-            <p>Função: Bolsista Geoprocessamento</p>
-            <p><a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=A15D526F9FA4788269FF05E85B01D810" target="_blank">Curriculum Lattes</a></p>
-            <p>Email: jaugustogeotecnologias@gmail.com</p>
-        </section>
+    <section class="profile">
+      <img src="./imagens_equipe/carlos.jpg" alt="Carlos André">
 
-    </article>
+      <div>
+        <p>Carlos André Carvalho da Silva</p>
+        <p>Função: Bolsista Geoprocessamento e Mídias</p>
+        <p><a href="http://lattes.cnpq.br/5215825864055073" target="_blank">Curriculum Lattes</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/mwlite/in/carlos-andr%C3%A9-0a4883144" target="_blank">Carlos
+            André</a></p>
+        <p>Email: karlosandre777@gmail.com</p>
+      </div>
+    </section>
+    <hr>
 
-    <button onclick="topFunction()" id="myBtn" title="Ir ao topo">Topo</button>
+    <section class="profile">
+      <img src="./imagens_equipe/prof_israel.jpeg" alt="Israel Costa">
 
-    <footer>
-		<!-- Conteúdo do rodápe -->
-		<div class="container">
-			
+      <div>
+        <p>Israel de Oliveira Costa</p>
+        <p>Função: Coordenador</p>
+        <p><a href="http://lattes.cnpq.br/2524748431528357" target="_blank">Curriculum Lattes</a></p>
+        <p>Email: israel.costa@ifpi.edu.br</p>
+      </div>
+    </section>
+    <hr>
 
-			<table> 
-				<tr>
-					<th colspan="2">Parceiros:</th>
-				</tr>
+    <section class="profile">
+      <img src="./imagens_equipe/prof_israel_lobato.jpeg" alt="Foto de Israel Lobato">
 
-				<tr>
-					<td><img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI" class="logos-parceiros"></td>
-					<td><img src="imagens/logo_fadex.png" alt="Logo da FADEX" class="logos-parceiros"></td>
-				</tr>
-				
-				<tr>
-					<td><img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura" class="logos-parceiros"></td>
-					<td><img src="imagens/saf_vertical.svg.png" alt="Logo da SAF" class="logos-parceiros"></td>
-				</tr>
-			</table>
+      <div>
+        <p>Israel Lobato Rocha</p>
+        <p>Função: Coordenador</p>
+        <p><a href="http://lattes.cnpq.br/6518724518793037" target="_blank">Curriculum Lattes</a></p>
+        <p>Email: israel.lobato@ifpi.edu.br</p>
+      </div>
+    </section>
+    <hr>
 
-		</div>
+    <section class="profile">
+      <img src="./imagens_equipe/jose_augusto.jpeg" alt="José Augusto">
 
+      <div>
+        <p>José Augusto Santos Teixeira</p>
+        <p>Função: Bolsista Geoprocessamento</p>
+        <p><a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=A15D526F9FA4788269FF05E85B01D810"
+            target="_blank">Curriculum Lattes</a></p>
+        <p>Email: jaugustogeotecnologias@gmail.com</p>
+      </div>
+    </section>
+  </article>
 
-		<div class="muni-rodape container" id="municipios">
-			<h1 class="titulo-muni">Municípios abrangidos pelo Projeto Refusa</h1>
-            
-            <ul class="lista-muni-esq">
-                <li>Alto Longá</li>
-                <li>Altos</li>			
-                <li>Amarante</li>
-                <li>Angical do Piauí</li>	
-                <li>Aroazes</li>		
-                <li>Batalha</li>
-                <li>Beneditinos</li>			
-                <li>Buriti dos Montes</li>            
-                <li>Campo Maior</li>            
-				<li>Demerval Lobão</li>
-				<li>Elesbão Veloso</li>
-                <li>Flores do Piauí</li>
-                <li>Floriano</li>
-                <li>Geminiano</li>
-            </ul>
+  <button onclick="topFunction()" id="myBtn" title="Ir ao topo">Topo</button>
 
-            <ul class="lista-muni-cen">    
-                <li>Itaueira</li>
-                <li>Jardim do Mulato</li>
-                <li>José de Freitas</li>
-                <li>Lagoa do Piauí</li>
-				<li>Nazaré do Piauí</li>
-				<li>Novo Oriente do Piauí</li>
-                <li>Patos so Piauí</li>
-                <li>Pedro II</li>
-                <li>Piripiri</li>
-                <li>Santa Cruz do Piauí</li>
-                <li>São Miguel da Baixa Grande</li>
-                <li>São Pedro do Piauí</li>
-                <li>Teresina</li>
-                <li>Valença do Piauí</li>
-            </ul>          
-		</div>
+  <section id="section-partners">
+    <div class="container partners">
+      <h2>Parceiros:</h2>
 
-        
-	</footer>
+      <div class="images-partners">
+        <img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI">
 
+        <img src="imagens/logo_fadex.png" alt="Logo da FADEX">
 
-		<div class="center-icons">
-            <div class="center-icons">
-                <div class="endereco">
-                    <h2 class="titulo-endereco">Endereço:</h2>
-                    <p class="info-endereco">Rua Quintino Bocaiúva, S/N</p>
-                    <p class="info-endereco">Centro (Norte), Teresina - PI, 64000-060</p>
-                    
-                    <a href="https://www.google.com.br/maps/place/Instituto+Federal+do+Piauí+-+Campus+Teresina+Central+-+Predio+C/@-5.0889124,-42.8104098,19.25z/data=!4m5!3m4!1s0x78e376201f52063:0x86f3c4744efc62db!8m2!3d-5.0887755!4d-42.8102821" target="_blank">(ver no maps)</a><br>
-    
-                    <a href="fale.html" target="_blank">(Fale Conosco)</a>
-    
-                    <p class="text-copyright">copyright © 2020 | REFUSA Todos os direitos reservados</p>				
-                </div>
-    
-                
-                <div class="redes-sociais">
-                    <a  class="links-footer" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a  class="links-footer" href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a  class="links-footer" href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a  class="links-footer" href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+        <img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura">
+
+        <img src="imagens/saf_vertical.svg.png" alt="Logo da SAF">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-info">
+      <div class="localization">
+        <h2>Localização: <a
+            href="https://www.google.com.br/maps/place/Instituto+Federal+do+Piauí+-+Campus+Teresina+Central+-+Predio+C/@-5.0889124,-42.8104098,19.25z/data=!4m5!3m4!1s0x78e376201f52063:0x86f3c4744efc62db!8m2!3d-5.0887755!4d-42.8102821"
+            target="_blank"><i class="fas fa-location-arrow"></i></a></h2>
+        <p>Rua: Quintino Bocaiúva, S/N</p>
+        <p>Bairro: Centro (Norte)</p>
+        <p>CEP: 64000 - 060</p>
+        <p>Teresina - PI</p>
+
+        <p>Fale Conosco <a href="fale.html" target="_blank"><i class="far fa-comment-dots"></i></a></p>
+      </div>
+
+      <div class="social-networks">
+        <!-- <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a> -->
+
+        <a href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
+
+        <a href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <footer class="footer copyright">
+    <p>copyright © 2020 | REFUSA Todos os direitos reservados</p>
+  </footer>
 </body>
 
 </html>
