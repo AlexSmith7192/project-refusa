@@ -1,8 +1,12 @@
-section {
+.images {
   border-bottom: 1px solid orange;
 }
 
-section h3 {
+.images:last-child {
+  border-bottom: none;
+}
+
+.images h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
@@ -11,7 +15,7 @@ section h3 {
   color: #01624F;
 }
 
-section img {
+.images img {
   border: 2px solid black;
   width: 32%;
   height: 45vh;
@@ -30,12 +34,12 @@ section img {
   
 /* Telefones em paisagem a tablet em retrato */
 @media (max-width: 767px) {
-  section h3 {
+  .images h3 {
     font-size: 1.5em;
     font-weight: 500;
   }
   
-  section img {
+  .images img {
     border: 2px solid black;
     width: 45%;
     height: 40vh;
@@ -46,11 +50,11 @@ section img {
 
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) { 
-  section h3 {
+  .images h3 {
     font-size: 1em;
   }
   
-  section img {
+  .images img {
     width: 100%;
     height: 55vh;
     margin-top: 2%;
