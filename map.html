@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mapa</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mapa</title>
 
-  <!-- Padronizando os espaçamentos com o reset.css -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- adicionando o leaflet -->
+		#map {
+			width: 100%;
+			height: 100vh;
+		}
+	</style>
+
+	<!-- adicionando o leaflet -->
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 
@@ -32,7 +39,7 @@
 	<script src="js/LControl_MousePosition.js"></script>
 	<script src="js/styledLayerControl.js"></script>
 
-  <!-- adicionando os arquivos .geojson -->
+	<!-- adicionando os arquivos .geojson -->
 	<script src='geojson/limite_semiarido.geojson'></script>
 	<script src="geojson/piaui_municipios.geojson"></script>
 	<script src="geojson/altolonga_bomlugar.geojson"></script>
@@ -75,9 +82,11 @@
 	<script src="geojson/teresina_caitetus.geojson"></script>
 	<script src="geojson/valenca_santamaria.geojson"></script>
 </head>
+
 <body>
-  <div id="map" class="container">
+	<div id="map">
 		<script src="js/leaflet.js"></script>
 	</div>
 </body>
+
 </html>
