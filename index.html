@@ -1,234 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<link rel="shortcut icon" href="imagens/favicon_io/favicon-32x32.png" type="image/x-icon">
+
 <head>
 	<title>REFUSA</title>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<meta name="author" content="Vinicius Developer Front-end">
 	<meta name="author" content="Alex Smith">
-	<meta name="description" content="Site do Projeto REFUSA , Instituto Federal Piauí ">
+	<meta name="description" content="Site do Projeto REFUSA, Instituto Federal Piauí ">
 	<meta name="keywords" content="Regularização fundiária, IFPI, SAF, FADEX, Projeto, Teresina, Piauí, Bahia">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css ">
-
-	<!-- Adptando site para mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Padronizando os espaçamentos com o reset.css -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	
-	<!-- adicionando o leaflet -->
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
 
-	 <!-- Leaflet CSS -->
-	 <link rel="stylesheet" href="css/leaflet_fullscreen.css">
-	 <link rel="stylesheet" href="css/leaflet_measure.css">
-	 <link rel="stylesheet" href="css/leaflet_control_boxzoom.css">
-	 <link rel="stylesheet" href="css/Leaflet_NavBar.css">
-	 <link rel="stylesheet" href="css/LControl_MousePosition.css">
-	 <link rel="stylesheet" href="css/styledLayerControl.css">
-	
-	 <!-- Leaflet JS -->
-	 <script src="js/leaflet_fullscreen.js"></script>
-	 <script src="js/leaflet_measure.js"></script>
-	 <script src="js/leaflet_control_boxzoom.js"></script>
-	 <script src="js/Leaflet_NavBar.js"></script>
-	 <script src="js/LControl_MousePosition.js"></script>
-	 <script src="js/styledLayerControl.js"></script>
-	
-	<!-- adiciona botão de volta ao topo --> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="css/style.css">
+
 	<script src="/js/button_topo.js"></script>
-
-	<!-- adicionando os arquivos .geojson -->
-	<script src='geojson/limite_semiarido.geojson'></script>
-	<script src="geojson/piaui_municipios.geojson"></script>
-	<script src="geojson/altolonga_bomlugar.geojson"></script>
-	<script src="geojson/altolonga_marinopolis.geojson"></script>
-	<script src="geojson/altos_bispado.geojson"></script>
-	<script src="geojson/altos_malhadadaspedras.geojson"></script>
-	<script src="geojson/amarante_vivafeliz.geojson"></script>
-	<script src="geojson/angical_chapadadohamilton.geojson"></script>
-	<script src="geojson/aroazes_barrovermelho.geojson"></script>
-	<script src="geojson/batalha_bacabas.geojson"></script>
-	<script src="geojson/batalha_caicarinha.geojson"></script>
-	<script src="geojson/batalha_maganos.geojson"></script>
-	<script src="geojson/beneditinos_buritizinho.geojson"></script>
-	<script src="geojson/buritidosmontes_canabrava.geojson"></script>
-	<script src="geojson/campomaior_tangara.geojson"></script>
-	<script src="geojson/elesbaoveloso_caraibas.geojson"></script>
-	<script src="geojson/flores_tamboril.geojson"></script>
-	<script src="geojson/floriano_caneladevelho.geojson"></script>
-	<script src="geojson/geminiano_cacimbinha.geojson"></script>
-	<script src="geojson/jardimdomulato_lagoadoscocos.geojson"></script>
-	<script src="geojson/jatoba_santa_luz.geojson"></script>
-	<script src="geojson/joaquim_pires_aninga.geojson"></script>
-	<script src="geojson/josedefreitas_altoalegre.geojson"></script>
-	<script src="geojson/josedefreitas_lembrada.geojson"></script>
-	<script src="geojson/josedefreitas_solnascente.geojson"></script>
-	<script src="geojson/lagoadopiaui_espiritosanto.geojson"></script>
-	<script src="geojson/novooriente_maedagua.geojson"></script>
-	<script src="geojson/patos_palma.geojson"></script>
-	<script src="geojson/pedroii_arara.geojson"></script>
-	<script src="geojson/pedroii_pedrabranca.geojson"></script>
-	<script src="geojson/piripiri_cachoeira.geojson"></script>
-	<script src="geojson/piripiri_sabia.geojson"></script>
-	<script src="geojson/santacruzdopiaui_vilanova.geojson"></script>
-	<script src="geojson/saojoaodoarraial_nossasenhoradefatima.geojson"></script>
-	<script src="geojson/saojoaodoarraial_santaluzia.geojson"></script>
-	<script src="geojson/saomigueldabaixagrande_mcruz.geojson"></script>
-	<script src="geojson/saopedro_caraibas.geojson"></script>
-	<script src="geojson/saopedro_todosossantos.geojson"></script>
-	<script src="geojson/teresina_bomsossego.geojson"></script>
-	<script src="geojson/teresina_caitetus.geojson"></script>
-	<script src="geojson/valenca_santamaria.geojson"></script>
 </head>
 
+<body>
+	<header>
+		<div id="header" class="container">
+			<img id="logo-refusa-header" src="imagens/logo-refusa-vert.png" alt="PROJETO REFUSA">
 
-<body>	
-	<header class="container">
-		<!--[if lt IE 9]>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-		<!-- Conteúdo do cabeçalho -->
-		<div class="menu-side">   
-			<h1><img class="logo-img" src="imagens/logo-refusa-vert.png" alt="PROJETO REFUSA"></h1>
-		
-			<a class="link-menu" href="index.html">Página Inicial</a>
-			<a class="link-menu" href="#map">Mapa</a>
-			<a class="link-menu" href="#municipios">Municípios</a>
-			<a class="link-menu" href="equipe.html">Equipe</a>
-			<a class="link-menu" href="sobre.html">Sobre o projeto</a>
-			<a class="link-menu" href="galeria.html">Galeria de fotos</a>
+			<nav id="navbar">
+				<a class="nav-link" href="index.html">Inicio</a>
+				<a class="nav-link" href="map.html" target="_blank">Mapa</a>
+				<a class="nav-link" href="equipe.html">Equipe</a>
+				<a class="nav-link" href="sobre.html">Sobre</a>
+				<a class="nav-link" href="galeria.html">Galeria</a>
+			</nav>
 		</div>
 	</header>
-	<!--Fim do cabeçalho-->
 
-		<div class="img-inicial">
-			<div class="center-text">
-				<div class="heading-title">
-					<h1 class="titulo-home-1">O que é o Projeto REFUSA?</h1>
-				</div>
-				
-				<div class="texto-oque container"> 
-					<p class="text-home-1">É um projeto de apoio técnico-científico para fortalecimento e consolidação das propriedades da agricultura familiar na região semiárida dos Estados da Bahia e Piauí, preferencialmente	as oriundas de ações de crédito fundiário desenvolvidos pela SEAD.</p> 
-				</div> 
+	<section class="main">
+		<div class="container">
+			<article>
+				<h1 class="title-home">O que é o Projeto REFUSA?</h1>
 
+				<p class="paragraph-home">É um projeto de apoio técnico-científico para fortalecimento e consolidação das
+					propriedades da agricultura familiar na região semiárida dos Estados da Bahia e Piauí, preferencialmente as
+					oriundas de ações de crédito fundiário desenvolvidos pela SEAD.</p>
+			</article>
 
-				<div class="section-inicial-2 container">
-					<div class="heading-title">
-						<h1 class="titulo-home-2"> Objetivos </h1>
-					</div>
+			<article>
+				<h1 class="title-home">Objetivos </h1>
 
-				 	<p class="text-home-2"> Realização de estudos e ações que permitam a regularização cadastral, o georreferenciamento  e o cadastramento fundiário de propriedades oriundas de ações de crédito fundiário desenvolvidos pela SEAD no semiárido brasileiro.</p>
-			  	</div>
-			</div>
+				<p class="paragraph-home"> Realização de estudos e ações que permitam a regularização cadastral, o
+					georreferenciamento e o cadastramento fundiário de propriedades oriundas de ações de crédito fundiário
+					desenvolvidos pela SEAD no semiárido brasileiro.</p>
+			</article>
+
+			<article class="counties">
+				<h2>Municípios abrangidos pelo Projeto Refusa</h2>
+
+				<ul>
+					<li>Alto Longá</li>
+					<li>Altos</li>
+					<li>Amarante</li>
+					<li>Angical do Piauí</li>
+					<li>Aroazes</li>
+					<li>Batalha</li>
+					<li>Beneditinos</li>
+					<li>Buriti dos Montes</li>
+					<li>Campo Maior</li>
+					<li>Demerval Lobão</li>
+					<li>Elesbão Veloso</li>
+					<li>Flores do Piauí</li>
+					<li>Floriano</li>
+					<li>Geminiano</li>
+					<li>Itaueira</li>
+					<li>Jardim do Mulato</li>
+					<li>José de Freitas</li>
+					<li>Lagoa do Piauí</li>
+					<li>Nazaré do Piauí</li>
+					<li>Novo Oriente do Piauí</li>
+					<li>Patos so Piauí</li>
+					<li>Pedro II</li>
+					<li>Piripiri</li>
+					<li>Santa Cruz do Piauí</li>
+					<li>São Miguel da Baixa Grande</li>
+					<li>São Pedro do Piauí</li>
+					<li>Teresina</li>
+					<li>Valença do Piauí</li>
+				</ul>
+			</article>
 		</div>
-	
-
-
-	<div id="map" class="container">
-		<script src="js/leaflet.js"></script>
-	</div>
-
+	</section>
 
 	<button onclick="topFunction()" id="myBtn" title="Ir ao topo">Topo</button>
 
+	<section id="section-partners">
+		<div class="container partners">
+			<h2>Parceiros:</h2>
 
-	<footer>
-		<!-- Conteúdo do rodápe -->
-		<div class="container">
-			
+			<div class="images-partners">
+				<img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI">
 
-			<table> 
-				<tr>
-					<th colspan="2">Parceiros:</th>
-				</tr>
+				<img src="imagens/logo_fadex.png" alt="Logo da FADEX">
 
-				<tr>
-					<td><img src="imagens/logo-ifpi-ho.png" alt="Logo do IFPI" class="logos-parceiros"></td>
-					<td><img src="imagens/logo_fadex.png" alt="Logo da FADEX" class="logos-parceiros"></td>
-				</tr>
+				<img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura">
 
-				<div class="muni-rodape container" id="municipios">
-					<h1 class="titulo-muni">Municípios abrangidos pelo Projeto Refusa</h1>
-					
-					<ul class="lista-muni-esq">
-				
-				<tr>
-					<td><img src="imagens/ministerio-da-agricultura.png" alt="Logo do Ministério da agricultura" class="logos-parceiros"></td>
-					<td><img src="imagens/saf_vertical.svg.png" alt="Logo da SAF" class="logos-parceiros"></td>
-				</tr>
-			</table>
-
+				<img src="imagens/saf_vertical.svg.png" alt="Logo da SAF">
+			</div>
 		</div>
+	</section>
 
+	<footer class="footer">
+		<div class="container footer-info">
+			<div class="localization">
+				<h2>Localização: <a
+						href="https://www.google.com.br/maps/place/Instituto+Federal+do+Piauí+-+Campus+Teresina+Central+-+Predio+C/@-5.0889124,-42.8104098,19.25z/data=!4m5!3m4!1s0x78e376201f52063:0x86f3c4744efc62db!8m2!3d-5.0887755!4d-42.8102821"
+						target="_blank"><i class="fas fa-location-arrow"></i></a></h2>
+				<p>Rua: Quintino Bocaiúva, S/N</p>
+				<p>Bairro: Centro (Norte)</p>
+				<p>CEP: 64000 - 060</p>
+				<p>Teresina - PI</p>
 
-		<div class="muni-rodape container" id="municipios">
-			<h1 class="titulo-muni">Municípios abrangidos pelo Projeto Refusa</h1>
-            
-            <ul class="lista-muni-esq">
-                <li>Alto Longá</li>
-                <li>Altos</li>			
-                <li>Amarante</li>
-                <li>Angical do Piauí</li>	
-                <li>Aroazes</li>		
-                <li>Batalha</li>
-                <li>Beneditinos</li>			
-                <li>Buriti dos Montes</li>            
-                <li>Campo Maior</li>            
-				<li>Demerval Lobão</li>
-				<li>Elesbão Veloso</li>
-                <li>Flores do Piauí</li>
-                <li>Floriano</li>
-                <li>Geminiano</li>
-            </ul>
+				<p>Fale Conosco <a href="fale.html" target="_blank"><i class="far fa-comment-dots"></i></a></p>
+			</div>
 
-            <ul class="lista-muni-cen">    
-                <li>Itaueira</li>
-                <li>Jardim do Mulato</li>
-                <li>José de Freitas</li>
-                <li>Lagoa do Piauí</li>
-				<li>Nazaré do Piauí</li>
-				<li>Novo Oriente do Piauí</li>
-                <li>Patos so Piauí</li>
-                <li>Pedro II</li>
-                <li>Piripiri</li>
-                <li>Santa Cruz do Piauí</li>
-                <li>São Miguel da Baixa Grande</li>
-                <li>São Pedro do Piauí</li>
-                <li>Teresina</li>
-                <li>Valença do Piauí</li>
-            </ul>          
+			<div class="social-networks">
+				<!-- <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a> -->
+
+				<a href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
+
+				<a href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
+
+				<a href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i
+						class="fab fa-facebook-f"></i></a>
+			</div>
+
 		</div>
 	</footer>
 
-	
-		<div class="center-icons">
-			<div class="endereco">
-				<h2 class="titulo-endereco">Endereço:</h2>
-				<p class="info-endereco">Rua Quintino Bocaiúva, S/N</p>
-				<p class="info-endereco">Centro (Norte), Teresina - PI, 64000-060</p>
-				
-				<a href="https://www.google.com.br/maps/place/Instituto+Federal+do+Piauí+-+Campus+Teresina+Central+-+Predio+C/@-5.0889124,-42.8104098,19.25z/data=!4m5!3m4!1s0x78e376201f52063:0x86f3c4744efc62db!8m2!3d-5.0887755!4d-42.8102821" target="_blank">(ver no maps)</a><br>
-
-				<a href="fale.html" target="_blank">(Fale Conosco)</a>
-
-				<p class="text-copyright">copyright © 2020 | REFUSA Todos os direitos reservados</p>				
-			</div>
-
-			
-			<div class="redes-sociais">
-				<a  class="links-footer" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a  class="links-footer" href="https://www.instagram.com/projetorefusa" target="_blank"><i class="fab fa-instagram"></i></a>
-				<a  class="links-footer" href="https://www.facebook.com/projetorefusa/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
-				<a  class="links-footer" href="https://twitter.com/ProjetoRefusa" target="_blank"><i class="fab fa-twitter"></i></a>
-			</div>
-		</div>
-	
-
-
+	<footer class="footer copyright">
+		<p>copyright © 2020 | REFUSA Todos os direitos reservados</p>
+	</footer>
 </body>
+
 </html>

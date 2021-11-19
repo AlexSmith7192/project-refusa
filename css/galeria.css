@@ -1,35 +1,63 @@
-.img-galeria {
-  width: 30%;
-  height: 45vh;
-  padding: 1% 0 0 1%;
+.images {
+  border-bottom: 1px solid orange;
 }
 
-.titulo-secao {
+.images:last-child {
+  border-bottom: none;
+}
+
+.images h3 {
   text-align: center;
+  text-transform: uppercase;
   font-size: 2em;
   padding: 3% 0 1% 0;
   font-weight: 500;
   color: #01624F;
 }
 
-
-/* Telefones em paisagem e abaixo */
-@media (max-width: 480px) { 
-  /* estilos aqui */
-}
-
-/* Telefones em paisagem a tablet em retrato */
-@media (max-width: 767px) {
-  /* estilos aqui */
-}
-
-/* Tablet em retrato a paisagem e desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  /* estilos aqui */
+.images img {
+  border: 2px solid black;
+  width: 32%;
+  height: 45vh;
+  margin: 1% 0 0 1%;
 }
 
 /* Desktop grande */
 @media (min-width: 1200px) {
  /* estilos aqui */
 }
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* estilos aqui */
+}
   
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+  .images h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  .images img {
+    border: 2px solid black;
+    width: 45%;
+    height: 40vh;
+    margin: 2% 0 0 2%;
+  }
+}
+
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+  .images h3 {
+    font-size: 1em;
+  }
+  
+  .images img {
+    width: 100%;
+    height: 55vh;
+    margin-top: 2%;
+  }
+}
+
