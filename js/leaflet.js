@@ -466,6 +466,58 @@ var saogabriel_novosbandeirantes = L.geoJSON(saogabriel_novosbandeirantes, {
     'Associação comunitaria de Novos Bandeirantes<br>Área: 482,3098 Ha<br>Perímetro: 11213,5838 m<br>Quantidade de famílias: 37<br>Município: São Gabriel - BA'
   )
 
+// LOTE 07
+var coribe_bora = L.geoJSON(coribe_bora, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação comunitaria do Borá<br>Área: 1007,2972 Ha<br>Perímetro: 14568,9456 m<br>Quantidade de famílias: 37<br>Município: Coribe - BA'
+  )
+
+var coribe_ranchinho = L.geoJSON(coribe_ranchinho, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação dos moradores e produtores de Ranchinho e Água Branca<br>Área: 1165,7004 Ha<br>Perímetro: 17538,4242 m<br>Quantidade de famílias: 53<br>Município: Coribe - BA'
+  )
+
+var saofelixdocoribe_boasorte = L.geoJSON(saofelixdocoribe_boasorte, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação de pequenos produtores de São Félix do Coribe - Boa Sorte<br>Área: 1054,1858 Ha<br>Perímetro: 15687,7156 m<br>Quantidade de famílias: 40<br>Município: São Felix do Coribe - BA'
+  )
+
+var saofelixdocoribe_parquedeexposicao = L.geoJSON(
+  saofelixdocoribe_parquedeexposicao,
+  {
+    color: 'red',
+    opacity: 1
+  }
+)
+  .addTo(map)
+  .bindPopup(
+    'Associação dos moradores e trabalhadores de Parque de Exposição<br>Área: 677,7417 Ha<br>Perímetro: 15906,4137 m<br>Quantidade de famílias: 40<br>Município: São Felix do Coribe - BA'
+  )
+
+var saofelixdocoribe_santamariadavitoria = L.geoJSON(
+  saofelixdocoribe_santamariadavitoria,
+  {
+    color: 'red',
+    opacity: 1
+  }
+)
+  .addTo(map)
+  .bindPopup(
+    'Associação dos pequenos produtores rurais de Santa Maria da Vitória - Lontra<br>Área: 799,1012 Ha<br>Perímetro: 13508,7186 m<br>Quantidade de famílias: 33<br>Município: São Felix do Coribe - BA'
+  )
+
 //grupo de camadas bases
 var baseMaps = [
   {
@@ -489,41 +541,68 @@ var overlayers = [
       'Malhada das Pedras': altos_malhadadaspedras,
       'Viva Feliz': amarante_vivafeliz,
       'Chapada do Hamilton': angical_chapadadohamilton,
-      'Barro Vermelho': aroazes_barrovermelho,
-      Bacabas: batalha_bacabas,
-      Caiçarihha: batalha_caicarinha,
-      Maganos: batalha_maganos,
-      Buritizinho: beneditinos_buritizinho,
-      'Cana Brava': buritidosmontes_canabrava,
       Tangara: campomaior_tangara,
-      Caraíbas: elesbaoveloso_caraibas,
       Tamboril: flores_tamboril,
-      'Canela de Velho': floriano_caneladevelho,
       Cacimbinha: geminiano_cacimbinha,
-      'Lagoa dos Cocos': jardimdomulato_lagoadoscocos,
-      'Santa Cruz': jatoba_santa_luz,
       Aninga: joaquimpires_aninga,
-      'Alto Alegre': josedefreitas_altoalegre,
-      Lembrada: josedefreitas_lembrada,
-      'Sol Nascente': josedefreitas_solnascente,
-      'Espirito Santo': lagoadopiaui_espiritosanto,
-      "Mãe D'Água": novooriente_maedagua,
       Palma: patos_palma,
-      Arara: pedroii_arara,
-      'Pedra Branca': pedroii_pedrabranca,
-      Cachoeira: piripiri_cachoeira,
-      Sabiá: piripiri_sabia,
       'Vila Nova': santacruzdopiaui_vilanova,
       'Nossa Senhora de Fátima': saojoaodoarraial_nossasenhoradefatima,
       'Santa Luzia': saojoaodoarraial_santaluzia,
       'M. Cruz': saomigueldabaixagrande_mcruz,
-      Caraibas: saopedro_caraibas,
       'Todos os Santos': saopedro_todosossantos,
-      'Bom Sossêgo': teresina_bomsossego,
-      Caitetus: teresina_caitetus,
-      'Santa Maria': valenca_santamaria,
       Semiárido: limite_semiarido,
       'Municípios do Piauí': municipios_piaui
+    }
+  },
+  {
+    groupName: 'Lote 01',
+    layers: {
+      Arara: pedroii_arara,
+      Bacabas: batalha_bacabas,
+      Caiçarihha: batalha_caicarinha,
+      Cachoeira: piripiri_cachoeira,
+      Maganos: batalha_maganos,
+      'Pedra Branca': pedroii_pedrabranca,
+      Sabiá: piripiri_sabia
+    }
+  },
+  {
+    groupName: 'Lote 02',
+    layers: {
+      // faltam dois assentamentos
+      'Cana Brava': buritidosmontes_canabrava,
+      'Santa Cruz': jatoba_santa_luz
+    }
+  },
+  {
+    groupName: 'Lote 03',
+    layers: {
+      // falta um assentamento
+      Buritizinho: beneditinos_buritizinho,
+      'Alto Alegre': josedefreitas_altoalegre,
+      Lembrada: josedefreitas_lembrada,
+      'Sol Nascente': josedefreitas_solnascente,
+      'Bom Sossêgo': teresina_bomsossego,
+      Caitetus: teresina_caitetus
+    }
+  },
+  {
+    groupName: 'Lote 04',
+    layers: {
+      'Canela de Velho': floriano_caneladevelho,
+      'Lagoa dos Cocos': jardimdomulato_lagoadoscocos,
+      'Espirito Santo': lagoadopiaui_espiritosanto,
+      Caraibas: saopedro_caraibas
+    }
+  },
+  {
+    groupName: 'Lote 05',
+    layers: {
+      'Barro Vermelho': aroazes_barrovermelho,
+      Caraíbas: elesbaoveloso_caraibas,
+      "Mãe D'Água": novooriente_maedagua,
+      'Santa Maria': valenca_santamaria
     }
   },
   {
@@ -537,6 +616,16 @@ var overlayers = [
       'Rural Esperança': piritiba_ruralesperanca,
       'Fazenda Esplanada': saogabriel_esplanada,
       'Novos Bandeirantes': saogabriel_novosbandeirantes
+    }
+  },
+  {
+    groupName: 'Lote 07',
+    layers: {
+      Bora: coribe_bora,
+      Ranchinho: coribe_ranchinho,
+      'Boa sorte': saofelixdocoribe_boasorte,
+      'Parque de Exposição': saofelixdocoribe_parquedeexposicao,
+      'Santa Maria da Vitória': saofelixdocoribe_santamariadavitoria
     }
   }
 ]
