@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <link
+    rel="shortcut icon"
+    href="imagens/favicon_io/favicon-32x32.png"
+    type="image/x-icon"
+  />
 
-<link rel="shortcut icon" href="imagens/favicon_io/favicon-32x32.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAPA</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MAPA</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
+      #map {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
 
-		#map {
-			width: 100%;
-			height: 100vh;
-		}
-	</style>
+    <!-- adicionando o leaflet -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
 
-	<!-- adicionando o leaflet -->
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="css/leaflet_fullscreen.css" />
+    <link rel="stylesheet" href="css/leaflet_measure.css" />
+    <link rel="stylesheet" href="css/leaflet_control_boxzoom.css" />
+    <link rel="stylesheet" href="css/Leaflet_NavBar.css" />
+    <link rel="stylesheet" href="css/LControl_MousePosition.css" />
+    <link rel="stylesheet" href="css/styledLayerControl.css" />
 
-	<!-- Leaflet CSS -->
-	<link rel="stylesheet" href="css/leaflet_fullscreen.css">
-	<link rel="stylesheet" href="css/leaflet_measure.css">
-	<link rel="stylesheet" href="css/leaflet_control_boxzoom.css">
-	<link rel="stylesheet" href="css/Leaflet_NavBar.css">
-	<link rel="stylesheet" href="css/LControl_MousePosition.css">
-	<link rel="stylesheet" href="css/styledLayerControl.css">
+    <!-- Leaflet JS -->
+    <script src="js/leaflet_fullscreen.js"></script>
+    <script src="js/leaflet_measure.js"></script>
+    <script src="js/leaflet_control_boxzoom.js"></script>
+    <script src="js/Leaflet_NavBar.js"></script>
+    <script src="js/LControl_MousePosition.js"></script>
+    <script src="js/styledLayerControl.js"></script>
 
-	<!-- Leaflet JS -->
-	<script src="js/leaflet_fullscreen.js"></script>
-	<script src="js/leaflet_measure.js"></script>
-	<script src="js/leaflet_control_boxzoom.js"></script>
-	<script src="js/Leaflet_NavBar.js"></script>
-	<script src="js/LControl_MousePosition.js"></script>
-	<script src="js/styledLayerControl.js"></script>
+    <!-- adicionando os arquivos .geojson -->
+    <script src="geojson/limite_semiarido.geojson"></script>
+    <script src="geojson/piaui_municipios.geojson"></script>
+    <script src="geojson/altolonga_bomlugar.geojson"></script>
+    <script src="geojson/altolonga_marinopolis.geojson"></script>
+    <script src="geojson/altos_bispado.geojson"></script>
+    <script src="geojson/altos_malhadadaspedras.geojson"></script>
+    <script src="geojson/amarante_vivafeliz.geojson"></script>
+    <script src="geojson/angical_chapadadohamilton.geojson"></script>
+    <script src="geojson/aroazes_barrovermelho.geojson"></script>
+    <script src="geojson/batalha_bacabas.geojson"></script>
+    <script src="geojson/batalha_caicarinha.geojson"></script>
+    <script src="geojson/batalha_maganos.geojson"></script>
+    <script src="geojson/beneditinos_buritizinho.geojson"></script>
+    <script src="geojson/buritidosmontes_canabrava.geojson"></script>
+    <script src="geojson/campomaior_tangara.geojson"></script>
+    <script src="geojson/elesbaoveloso_caraibas.geojson"></script>
+    <script src="geojson/flores_tamboril.geojson"></script>
+    <script src="geojson/floriano_caneladevelho.geojson"></script>
+    <script src="geojson/geminiano_cacimbinha.geojson"></script>
+    <script src="geojson/jardimdomulato_lagoadoscocos.geojson"></script>
+    <script src="geojson/jatoba_santa_luz.geojson"></script>
+    <script src="geojson/joaquim_pires_aninga.geojson"></script>
+    <script src="geojson/josedefreitas_altoalegre.geojson"></script>
+    <script src="geojson/josedefreitas_lembrada.geojson"></script>
+    <script src="geojson/josedefreitas_solnascente.geojson"></script>
+    <script src="geojson/lagoadopiaui_espiritosanto.geojson"></script>
+    <script src="geojson/novooriente_maedagua.geojson"></script>
+    <script src="geojson/patos_palma.geojson"></script>
+    <script src="geojson/pedroii_arara.geojson"></script>
+    <script src="geojson/pedroii_pedrabranca.geojson"></script>
+    <script src="geojson/piripiri_cachoeira.geojson"></script>
+    <script src="geojson/piripiri_sabia.geojson"></script>
+    <script src="geojson/santacruzdopiaui_vilanova.geojson"></script>
+    <script src="geojson/saojoaodoarraial_nossasenhoradefatima.geojson"></script>
+    <script src="geojson/saojoaodoarraial_santaluzia.geojson"></script>
+    <script src="geojson/saomigueldabaixagrande_mcruz.geojson"></script>
+    <script src="geojson/saopedro_caraibas.geojson"></script>
+    <script src="geojson/saopedro_todosossantos.geojson"></script>
+    <script src="geojson/teresina_bomsossego.geojson"></script>
+    <script src="geojson/teresina_caitetus.geojson"></script>
+    <script src="geojson/valenca_santamaria.geojson"></script>
 
-	<!-- adicionando os arquivos .geojson -->
-	<script src='geojson/limite_semiarido.geojson'></script>
-	<script src="geojson/piaui_municipios.geojson"></script>
-	<script src="geojson/altolonga_bomlugar.geojson"></script>
-	<script src="geojson/altolonga_marinopolis.geojson"></script>
-	<script src="geojson/altos_bispado.geojson"></script>
-	<script src="geojson/altos_malhadadaspedras.geojson"></script>
-	<script src="geojson/amarante_vivafeliz.geojson"></script>
-	<script src="geojson/angical_chapadadohamilton.geojson"></script>
-	<script src="geojson/aroazes_barrovermelho.geojson"></script>
-	<script src="geojson/batalha_bacabas.geojson"></script>
-	<script src="geojson/batalha_caicarinha.geojson"></script>
-	<script src="geojson/batalha_maganos.geojson"></script>
-	<script src="geojson/beneditinos_buritizinho.geojson"></script>
-	<script src="geojson/buritidosmontes_canabrava.geojson"></script>
-	<script src="geojson/campomaior_tangara.geojson"></script>
-	<script src="geojson/elesbaoveloso_caraibas.geojson"></script>
-	<script src="geojson/flores_tamboril.geojson"></script>
-	<script src="geojson/floriano_caneladevelho.geojson"></script>
-	<script src="geojson/geminiano_cacimbinha.geojson"></script>
-	<script src="geojson/jardimdomulato_lagoadoscocos.geojson"></script>
-	<script src="geojson/jatoba_santa_luz.geojson"></script>
-	<script src="geojson/joaquim_pires_aninga.geojson"></script>
-	<script src="geojson/josedefreitas_altoalegre.geojson"></script>
-	<script src="geojson/josedefreitas_lembrada.geojson"></script>
-	<script src="geojson/josedefreitas_solnascente.geojson"></script>
-	<script src="geojson/lagoadopiaui_espiritosanto.geojson"></script>
-	<script src="geojson/novooriente_maedagua.geojson"></script>
-	<script src="geojson/patos_palma.geojson"></script>
-	<script src="geojson/pedroii_arara.geojson"></script>
-	<script src="geojson/pedroii_pedrabranca.geojson"></script>
-	<script src="geojson/piripiri_cachoeira.geojson"></script>
-	<script src="geojson/piripiri_sabia.geojson"></script>
-	<script src="geojson/santacruzdopiaui_vilanova.geojson"></script>
-	<script src="geojson/saojoaodoarraial_nossasenhoradefatima.geojson"></script>
-	<script src="geojson/saojoaodoarraial_santaluzia.geojson"></script>
-	<script src="geojson/saomigueldabaixagrande_mcruz.geojson"></script>
-	<script src="geojson/saopedro_caraibas.geojson"></script>
-	<script src="geojson/saopedro_todosossantos.geojson"></script>
-	<script src="geojson/teresina_bomsossego.geojson"></script>
-	<script src="geojson/teresina_caitetus.geojson"></script>
-	<script src="geojson/valenca_santamaria.geojson"></script>
-</head>
+    <!-- LOTE 06 -->
+    <script src="geojson/lote_06/andarai_moco.geojson"></script>
+    <script src="geojson/lote_06/itaberaba_valedoprogresso.geojson"></script>
+    <script src="geojson/lote_06/jussara_araripina.geojson"></script>
+    <script src="geojson/lote_06/jussara_morrodohigino.geojson"></script>
+    <script src="geojson/lote_06/lencois_padrecicero.geojson"></script>
+    <script src="geojson/lote_06/piritiba_ruralesperanca.geojson"></script>
+    <script src="geojson/lote_06/saogabriel_esplanada.geojson"></script>
+    <script src="geojson/lote_06/saogabriel_novosbandeirantes.geojson"></script>
+  </head>
 
-<body>
-	<div id="map">
-		<script src="js/leaflet.js"></script>
-	</div>
-</body>
-
+  <body>
+    <div id="map">
+      <script src="js/leaflet.js"></script>
+    </div>
+  </body>
 </html>

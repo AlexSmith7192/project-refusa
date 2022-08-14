@@ -1,4 +1,4 @@
-{
+var piritiba_ruralesperanca = {
 "type": "FeatureCollection",
 "name": "piritiba_ruralesperanca",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4674" } },

@@ -393,6 +393,79 @@ var valenca_santamaria = L.geoJSON(valenca_santamaria, {
     'Assentamento Santa Maria<br>Área: 672,2017 Ha<br>Perímetro: 7856,0311 m<br>Quantidade de famílias: 17<br>Município: Valença<br>Território de Desenvolvimento: Entre Rios'
   )
 
+// LOTE 06
+var andarai_moco = L.geoJSON(andarai_moco, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação comunitaria dos pequenos produtores rurais da Fazenda Mocó<br>Área: 914,7391 Ha<br>Perímetro: 18822,3974 m<br>Quantidade de famílias: 45<br>Município: Andaraí - BA'
+  )
+
+var itaberaba_valedoprogresso = L.geoJSON(itaberaba_valedoprogresso, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação comunitaria Vale do Progresso<br>Área: 488,9613 Ha<br>Perímetro: 11710.6588 m<br>Quantidade de famílias: 25<br>Município: Itaberaba - BA'
+  )
+
+var jussara_araripina = L.geoJSON(jussara_araripina, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação dos pequenos produtores rurais da Fazenda Araripina<br>Área: 887,8282 Ha<br>Perímetro: 14707,4951 m<br>Quantidade de famílias: 29<br>Município: Jussara - BA'
+  )
+
+var jussara_morrodohigino = L.geoJSON(jussara_morrodohigino, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação comunitaria dos moradores e de pequenos produtores rurais do Morro do Hígino<br>Área: 887,8282 Ha<br>Perímetro: 14707,4951 m<br>Quantidade de famílias: 29<br>Município: Jussara - BA'
+  )
+
+var lencois_padrecicero = L.geoJSON(lencois_padrecicero, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação dos trabalhadores rurais da Fazenda Padre Cicero<br>Área: 514,5827 Ha<br>Perímetro: 12389,3851 m<br>Quantidade de famílias: 29<br>Município: Lencóis - BA'
+  )
+
+var piritiba_ruralesperanca = L.geoJSON(piritiba_ruralesperanca, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação Rural Esperança<br>Área: 290,0147 Ha<br>Perímetro: 10577,4929 m<br>Quantidade de famílias: 27<br>Município: Piritiba - BA'
+  )
+
+var saogabriel_esplanada = L.geoJSON(saogabriel_esplanada, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação de produtores rurais da Fazenda Esplanada<br>Área: 782,2154 Ha<br>Perímetro: 12555.195 m<br>Quantidade de famílias: 25<br>Município: São Gabriel - BA'
+  )
+
+var saogabriel_novosbandeirantes = L.geoJSON(saogabriel_novosbandeirantes, {
+  color: 'red',
+  opacity: 1
+})
+  .addTo(map)
+  .bindPopup(
+    'Associação comunitaria de Novos Bandeirantes<br>Área: 482,3098 Ha<br>Perímetro: 11213,5838 m<br>Quantidade de famílias: 37<br>Município: São Gabriel - BA'
+  )
+
 //grupo de camadas bases
 var baseMaps = [
   {
@@ -451,6 +524,19 @@ var overlayers = [
       'Santa Maria': valenca_santamaria,
       Semiárido: limite_semiarido,
       'Municípios do Piauí': municipios_piaui
+    }
+  },
+  {
+    groupName: 'Lote 06',
+    layers: {
+      'Fazenda Mocó': andarai_moco,
+      'Vale do Progresso': itaberaba_valedoprogresso,
+      'Fazenda Araripina': jussara_araripina,
+      'Morro do Higino': jussara_morrodohigino,
+      'Fazenda Padre Cicero': lencois_padrecicero,
+      'Rural Esperança': piritiba_ruralesperanca,
+      'Fazenda Esplanada': saogabriel_esplanada,
+      'Novos Bandeirantes': saogabriel_novosbandeirantes
     }
   }
 ]

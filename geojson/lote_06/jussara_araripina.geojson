@@ -1,4 +1,4 @@
-{
+var jussara_araripina = {
 "type": "FeatureCollection",
 "name": "jussara_araripina",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4674" } },

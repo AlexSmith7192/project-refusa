@@ -1,4 +1,4 @@
-{
+var itaberaba_valedoprogresso = {
 "type": "FeatureCollection",
 "name": "itaberaba_valedoprogresso",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4674" } },

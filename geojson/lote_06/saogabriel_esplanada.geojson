@@ -1,4 +1,4 @@
-{
+var saogabriel_esplanada = {
 "type": "FeatureCollection",
 "name": "saogabriel_esplanada",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4674" } },
