@@ -1,8 +1,0 @@
-var saojoaodoarraial_nossasenhoradefatima = {
-"type": "FeatureCollection",
-"name": "saojoaodoarraial_nossasenhoradefatima",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4674" } },
-"features": [
-{ "type": "Feature", "properties": { "MUNICIPIO": "SAO JOAO DO ARRAIAL", "ASSOCIACAO": "NOSSA SENHORA DE FATIMA", "TERRITORIO": "COCAIS", "AREA": 1027.5816, "PERIMETRO": 15360.957 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -42.4564084073236, -3.84747524334712 ], [ -42.456408415548601, -3.847475619508964 ], [ -42.433455241154114, -3.871185074504901 ], [ -42.421387197970816, -3.883557108471436 ], [ -42.426736510665016, -3.885073770329387 ], [ -42.428956848550165, -3.885821680089628 ], [ -42.438934625281959, -3.889277216898726 ], [ -42.438341565154602, -3.891977700303043 ], [ -42.45439750039786, -3.897069772261384 ], [ -42.455200029551676, -3.878535266621713 ], [ -42.455755911055924, -3.864157489367209 ], [ -42.4564084073236, -3.84747524334712 ] ] ] ] } }
-]
-}
